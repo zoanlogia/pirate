@@ -9,12 +9,13 @@
 		<link href="{{ asset ('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i')}}" rel="stylesheet">
 		<link rel="stylesheet" href="{{ asset ('css/style.css')}}">
 		<link rel="shortcut icon" type="image/png" href="{{ asset ('img/favicon.png')}}">
-
+		
 		<title>Les sens des arômes &mdash;</title>
 	</head>
 
     {% block header %}
 	<body class="container">
+
 		<div class="sidebar">
 			<button class="nav-btn"></button>
 		</div>
@@ -346,6 +347,8 @@
 
 
 			</section>
+		{% endblock %}
+		{%block body %}
 		{% endblock %}
 		{% block footer %}
 			<footer class="footer">
