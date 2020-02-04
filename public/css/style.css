@@ -87,7 +87,7 @@ body {
   margin-bottom: 8rem; }
 
 .sidebar {
-  background-color: #c69963;
+  background-color: darkseagreen;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   display: flex;
@@ -127,8 +127,8 @@ body {
 
 .header {
   background-color: #54483A;
-  grid-column: full-start / col-end 6;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  grid-column: full-start / col-end 10;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0)), url(../img/hero.jpeg);
   background-size: cover;
   background-position: center;
   padding: 8rem;

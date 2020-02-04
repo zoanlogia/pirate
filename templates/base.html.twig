@@ -1,218 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-    <head>
+
+	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+		<link href="{{ asset ('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
 		<link href="{{ asset ('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i')}}" rel="stylesheet">
+		<link href="{{ asset ('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css')}}">
 		<link rel="stylesheet" href="{{ asset ('css/style.css')}}">
-		<link rel="shortcut icon" type="image/png" href="{{ asset ('img/favicon.png')}}">
 
-		<title>Les sens des arômes &mdash;</title>
+
+		<title>Les sens des arômes</title>
 	</head>
 
-    {% block header %}
-	<body class="container">
-		<div class="sidebar">
-			<button class="nav-btn"></button>
-		</div>
+	{% block header %}
+		<body class="container">
+			<div class="sidebar">
+				<button class="nav-btn"></button>
+			</div>
 			<header class="header">
-				<img src="{{ asset ('img/logo.png')}}" alt="Nexter logo" class="header__logo">
-				<h3 class="heading-3">Your own home:</h3>
-				<h1 class="heading-1">The ultimate personal freedom</h1>
-				<button class="btn header__btn">View our properties</button>
-				<div class="header__seenon-text">Seen on</div>
-				<div class="header__seenon-logos">
-					<img src="{{ asset ('img/logo-bbc.png')}}" alt="Seen on logo 1"> <!-- Ajout template et syntaxes doubles moustaches sur tous les liens -->
-					<img src="{{ asset ('img/logo-forbes.png')}}" alt="Seen on logo 2">
-					<img src="{{ asset ('img/logo-techcrunch.png')}}" alt="Seen on logo 3">
-					<img src="{{ asset ('img/logo-bi.png')}}" alt="Seen on logo 4">
+
+				<h3 class="heading-3">Bienvenue chez</h3>
+				<h1 class="heading-1">Les sens des arômes</h1>
+				<button class="btn header__btn">Découvrir</button>
+
+				<div
+					class="header__seenon-logos"><!-- Ajout template et syntaxes doubles moustaches sur tous les liens -->
 				</div>
 			</header>
 		{% endblock %}
 		{% block main %}
-			<div class="realtors">
-				<h3 class="heading-3">Top 3 Realtors</h3>
-				<div class="realtors__list">
-					<img src="{{ asset ('img/realtor-1.jpeg')}}" alt="Realtor 1" class="realtors__img">
-					<div class="realtors__details">
-						<h4 class="heading-4 heading-4--light">Erik Feinman</h4>
-						<p class="realtors__sold">245 houses sold</p>
-					</div>
 
-					<img src="{{ asset ('img/realtor-2.jpeg')}}" alt="Realtor 2" class="realtors__img">
-					<div class="realtors__details">
-						<h4 class="heading-4 heading-4--light">Kim Brown</h4>
-						<p class="realtors__sold">212 houses sold</p>
-					</div>
-
-					<img src="{{ asset ('img/realtor-3.jpeg')}}" alt="Realtor 3" class="realtors__img">
-					<div class="realtors__details">
-						<h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
-						<p class="realtors__sold">198 houses sold</p>
-					</div>
-				</div>
-			</div>
 
 			<section class="features">
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="{{ asset ('img/sprite.svg#icon-global')}}"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-tree')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">World's best luxury homes</h4>
+					<h4 class="heading-4 heading-4--dark">Le meilleur de ce que dame nature nous offre</h4>
 					<p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
 				</div>
 
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="{{ asset ('img/sprite.svg#icon-trophy')}}"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-eco')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">Only the best properties</h4>
+					<h4 class="heading-4 heading-4--dark">Issue d'une écologie résponsable</h4>
 					<p class="feature__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
 				</div>
 
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="img/sprite.svg#icon-map-pin"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">All homes in in top locations</h4>
+					<h4 class="heading-4 heading-4--dark">Tous tes les saveurs à portée de mains</h4>
 					<p class="feature__text">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.</p>
 				</div>
 
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="img/sprite.svg#icon-key"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">New home in one week</h4>
+					<h4 class="heading-4 heading-4--dark">Pour un corps sain dans un esprit sain</h4>
 					<p class="feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="img/sprite.svg#icon-presentation"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+					<h4 class="heading-4 heading-4--dark">99% de clients satisfaits</h4>
 					<p class="feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
 				</div>
 
 				<div class="feature">
 					<svg class="feature__icon">
-						<use xlink:href="img/sprite.svg#icon-lock"></use>
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-lock')}}"></use>
 					</svg>
-					<h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
+					<h4 class="heading-4 heading-4--dark">Paiements sécurisés</h4>
 					<p class="feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
 				</div>
 			</section>
 
 			<div class="story__pictures">
-				<img src="{{ asset ('img/story-1.jpeg')}}" alt="Couple with new house" class="story__img--1">
-				<img src="{{ asset ('img/story-2.jpeg')}}" alt="New house" class="story__img--2">
+				<img src="{{ asset ('img/story-1.jpeg')}}" alt="" class="story__img--1">
+				<img src="{{ asset ('img/story-2.jpeg')}}" alt="" class="story__img--2">
 			</div>
 
 			<div class="story__content">
-				<h3 class="heading-3 mb-sm">Happy Customers</h3>
-				<h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best decision of our lives&rdquo;</h2>
+				<h3 class="heading-3 mb-sm"></h3>
+				<h2 class="heading-2 heading-2--dark mb-md">&ldquo;Lorem ipsum&rdquo;</h2>
 				<p class="story__text">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
 				</p>
-				<button class="btn">Find your own home</button>
+				<button class="btn">Lorem ipsum</button>
 			</div>
 
 			<section class="homes">
 				<div class="home">
-					<img src="{{ asset ('img/house-1.jpeg')}}" alt="House 1" class="home__img">
+					<img src="{{ asset ('img/oil-1.jpeg')}}" alt="House 1" class="home__img">
 					<svg class="home__like">
 						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
 					</svg>
-					<h5 class="home__name">Beautiful Familiy House</h5>
+					<h5 class="home__name">Lorem</h5>
 					<div class="home__location">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-map-pin')}}"></use>
 						</svg>
-						<p>USA</p>
+						<p>Lorem</p>
 					</div>
 					<div class="home__rooms">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-profile-male')}}"></use>
 						</svg>
-						<p>5 rooms</p>
+						<p>Lorem</p>
 					</div>
 					<div class="home__area">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-expand')}}"></use>
 						</svg>
-						<p>325 m<sup>2</sup>
+						<p>Lorem<sup>Lorem</sup>
+						</p>
+					</div>
+					<div class="home__price">
+						<svg>
+							<use xlink:href="{{ asset ('img/sprite.svg#icon-three')}}"></use>
+						</svg>
+						<p>Lorem</p>
+					</div>
+					<button class="btn home__btn">Voir le produit</button>
+				</div>
+
+
+				<div class="home">
+					<img src="{{ asset ('img/oil-2.jpeg')}}" alt="House 2" class="home__img">
+					<svg class="home__like">
+						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
+					</svg>
+					<h5 class="home__name">lorem
+					</h5>
+					<div class="home__location">
+						<svg>
+							<use xlink:href="{{ asset ('img/sprite.svg#icon-map-pin')}}"></use>
+						</svg>
+						<p>lorem</p>
+					</div>
+					<div class="home__rooms">
+						<svg>
+							<use xlink:href="{{ asset ('img/sprite.svg#icon-profile-male')}}"></use>
+						</svg>
+						<p>lorem</p>
+					</div>
+					<div class="home__area">
+						<svg>
+							<use xlink:href="{{ asset ('img/sprite.svg#icon-expand')}}"></use>
+						</svg>
+						<p>lorem<sup>lorem</sup>
 						</p>
 					</div>
 					<div class="home__price">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-key')}}"></use>
 						</svg>
-						<p>$1,200,000</p>
+						<p>lorem</p>
 					</div>
-					<button class="btn home__btn">Contact realtor</button>
+					<button class="btn home__btn">Voir le produit</button>
 				</div>
 
-
 				<div class="home">
-					<img src="{{ asset ('img/house-2.jpeg')}}" alt="House 2" class="home__img">
+					<img src="{{ asset ('img/oil-3.jpeg')}}" alt="House 3" class="home__img">
 					<svg class="home__like">
 						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
 					</svg>
-					<h5 class="home__name">Modern Glass Villa</h5>
+					<h5 class="home__name">lorem</h5>
 					<div class="home__location">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-map-pin')}}"></use>
 						</svg>
-						<p>Canada</p>
+						<p>lorem</p>
 					</div>
 					<div class="home__rooms">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-profile-male')}}"></use>
 						</svg>
-						<p>6 rooms</p>
+						<p>lorem</p>
 					</div>
 					<div class="home__area">
 						<svg>
 							<use xlink:href="{{ asset ('img/sprite.svg#icon-expand')}}"></use>
 						</svg>
-						<p>450 m<sup>2</sup>
-						</p>
-					</div>
-					<div class="home__price">
-						<svg>
-							<use xlink:href="{{ asset ('img/sprite.svg#icon-key')}}"></use>
-						</svg>
-						<p>$2,750,000</p>
-					</div>
-					<button class="btn home__btn">Contact realtor</button>
-				</div>
-
-				<div class="home">
-					<img src="{{ asset ('img/house-3.jpeg')}}" alt="House 3" class="home__img">
-					<svg class="home__like">
-						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
-					</svg>
-					<h5 class="home__name">Cozy Country House</h5>
-					<div class="home__location">
-						<svg>
-							<use xlink:href="{{ asset ('img/sprite.svg#icon-map-pin')}}"></use>
-						</svg>
-						<p>UK</p>
-					</div>
-					<div class="home__rooms">
-						<svg>
-							<use xlink:href="{{ asset ('img/sprite.svg#icon-profile-male')}}"></use>
-						</svg>
-						<p>4 rooms</p>
-					</div>
-					<div class="home__area">
-						<svg>
-							<use xlink:href="{{ asset ('img/sprite.svg#icon-expand')}}"></use>
-						</svg>
-						<p>250 m<sup>2</sup>
+						<p>lorem<sup>lorem</sup>
 						</p>
 					</div>
 					<div class="home__price">
@@ -221,11 +199,11 @@
 						</svg>
 						<p>$850,000</p>
 					</div>
-					<button class="btn home__btn">Contact realtor</button>
+					<button class="btn home__btn">Voir le produit</button>
 				</div>
 
 				<div class="home">
-					<img src="{{ asset ('img/house-4.jpeg')}}" alt="House 4" class="home__img">
+					<img src="{{ asset ('img/oil-4.jpeg')}}" alt="House 4" class="home__img">
 					<svg class="home__like">
 						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
 					</svg>
@@ -255,11 +233,11 @@
 						</svg>
 						<p>$1,950,000</p>
 					</div>
-					<button class="btn home__btn">Contact realtor</button>
+					<button class="btn home__btn">Voir le produit</button>
 				</div>
 
 				<div class="home">
-					<img src="{{ asset ('img/house-5.jpeg')}}" alt="House 5" class="home__img">
+					<img src="{{ asset ('img/oil-5.jpeg')}}" alt="House 5" class="home__img">
 					<svg class="home__like">
 						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
 					</svg>
@@ -289,11 +267,11 @@
 						</svg>
 						<p>$9,500,000</p>
 					</div>
-					<button class="btn home__btn">Contact realtor</button>
+					<button class="btn home__btn">Voir le produit</button>
 				</div>
 
 				<div class="home">
-					<img src="{{ asset ('img/house-6.jpeg')}}" alt="House 6" class="home__img">
+					<img src="{{ asset ('img/oil-6.jpeg')}}" alt="House 6" class="home__img">
 					<svg class="home__like">
 						<use xlink:href="{{ asset ('img/sprite.svg#icon-heart-full')}}"></use>
 					</svg>
@@ -323,7 +301,7 @@
 						</svg>
 						<p>$600,000</p>
 					</div>
-					<button class="btn home__btn">Contact realtor</button>
+					<button class="btn home__btn">Voir le produit</button>
 				</div>
 			</section>
 
@@ -351,26 +329,18 @@
 			<footer class="footer">
 				<ul class="nav">
 					<li class="nav__item">
-						<a href="#" class="nav__link">Find your dream home</a>
+						<a href="#" class="nav__link">Nous rejoindre</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link">Request proposal</a>
+						<a href="#" class="nav__link">Nous contacter</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link">Download home planner</a>
+						<a href="#" class="nav__link">Mentions légales</a>
 					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Contact us</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Submit your property</a>
-					</li>
-					<li class="nav__item">
-						<a href="#" class="nav__link">Come work with us!</a>
-					</li>
+
 				</ul>
 				<p class="copyright">
-					&copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this project for your own purposes. This does NOT apply if you plan to produce your own course or tutorials based on this project.
+					&copy; Copyright 2019 par Dounia, Adame, Bryan et Guillaume
 				</p>
 			</footer>
 		{% endblock %}
