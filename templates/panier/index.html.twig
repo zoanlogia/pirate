@@ -1,0 +1,56 @@
+<!--  extends 'base.html.twig' a remettre -->
+
+{% block title %}Hello PanierController!{% endblock %}
+
+{% block body %}
+
+    <div>
+        <h1>Votre panier</h1>
+    </div>
+    <!-- si le panier n'est pas vide (verification de la taille de items)  -->
+    {% if items | length > 0 %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Image</th>
+                    <th>Déscription</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                    <tr>
+                        <td>{{ item.produits.nom }}</td>
+                        <td>{{ item.produits.image }}</td>
+                        <td>{{ item.produits.description }}</td>
+                        <td>{{ item.produits.prix }}</td>
+                        <td>{{ item.produits.quantity }}</td>
+                        <td>{{ item.produits.prix * item.produits.quantity }} }}</td>
+                        <td>
+                            <a href="{{ path('panier_subtract', {'id': item.produits.id}) }}" class="btn">Enlever un article</a>
+                        </td>
+                        <td>
+                            <a href="{{ path('panier_remove', {'id': item.produits.id}) }}" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total : </td>
+                    <td>{{ totalPrice }}</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    {% else %}
+        <p>Votre panier est vide</p>
+    {% endif %}
+
+{% endblock %}
