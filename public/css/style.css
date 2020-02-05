@@ -541,8 +541,8 @@ ul {
   display: inline-block;
   padding: 17px 50px;
   border-radius: 5px;
-  background-color: #B08EAD;
-  border: 2px solid #B08EAD;
+  background-color: #73AE62;
+  border: 1px solid #F7EFF7;
   font-size: 15px;
   font-weight: 500;
   -webkit-transition: 0.5s;
@@ -554,7 +554,7 @@ ul {
 /* line 36, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_button.scss */
 .btn_1:hover {
   background-color: #fff;
-  color: #B08EAD;
+  color: #73AE62;
 }
 
 @media (max-width: 991px) {
@@ -570,10 +570,10 @@ ul {
   padding: 18px 36px;
   border-radius: 5px;
   background-color: transparent;
-  border: 1px solid #B08EAD;
+  border: 1px solid #73AE62;
   font-size: 15px;
   font-weight: 700;
-  color: #B08EAD;
+  color: #73AE62;
   text-transform: uppercase;
   font-weight: 400;
   -webkit-transition: 0.5s;
@@ -582,7 +582,7 @@ ul {
 
 /* line 56, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_button.scss */
 .btn_3:hover {
-  background-color: #B08EAD;
+  background-color: #73AE62;
   color: #fff;
 }
 
@@ -2329,7 +2329,7 @@ ul {
   transform: scale(1, 0);
   display: block;
   border: 0px solid transparent;
-  background-color: #B08EAD;
+  background-color: #889D7E;
 }
 
 /* line 135, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
@@ -2337,7 +2337,7 @@ ul {
   font-size: 14px;
   padding: 8px 20px !important;
   color: #fff !important;
-  background-color: #B08EAD;
+  background-color: #889D7E;
   text-transform: capitalize;
 }
 
@@ -2497,7 +2497,7 @@ ul {
   content: "";
   left: 0;
   bottom: 0;
-  background-color: #B08EAD;
+  background-color: #97ece1;
   width: 196px;
   height: 618px;
 }
@@ -3028,7 +3028,7 @@ input:focus {
 
 /* line 1, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
 .trending_items {
-  background-color: #F4EDF2;
+  background-color: #CAE1CD;
   padding: 200px 0 130px;
 }
 
@@ -3128,7 +3128,7 @@ input:focus {
 .client_review {
   padding: 100px 0;
   text-align: center;
-  background-color: #B08EAD;
+  background-color: rgb(117, 190, 187);
   position: relative;
 }
 
@@ -3309,7 +3309,7 @@ input:focus {
 
 /* line 1, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_subscribe_part.scss */
 .subscribe_part {
-  background-color: #4B3049;
+  background-color: rgb(117, 190, 187);
 }
 
 /* line 3, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_subscribe_part.scss */
@@ -8641,12 +8641,12 @@ h6 {
 
 /* line 63, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 .footer_part .social_icon a:hover {
-  background-color: #E4D3DF;
+  background-color: rgb(114, 189, 186);
 }
 
 /* line 69, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 .footer_part .copyright_part {
-  background-color: #F4EDF2;
+  background-color: #D7EDD1;
   padding: 30px 0px;
 }
 
