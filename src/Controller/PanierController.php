@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-// ajouter le use repository produit
+use App\Repository\ProduitsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
@@ -12,7 +12,7 @@ class PanierController extends AbstractController
     /**
      * @Route("/panier", name="panier_index")
      */
-    public function index(SessionInterface $session)//, ProduitsRepository $produitsRepository)
+    public function index(SessionInterface $session, ProduitsRepository $produitsRepository)
     {
         // On récupere ce qu'il y a dans la session, dans le panier
         $panier = $session->get('panier', []);
@@ -24,7 +24,7 @@ class PanierController extends AbstractController
             // Initialisation du tableau associatif
             $panierProductInfo[] = [
                 // récupération des données des produits
-                //'produits' => $produitsRepository->find($id),
+                'produits' => $produitsRepository->find($id),
                 'quantity' => $quantity
             ];
 
@@ -34,7 +34,7 @@ class PanierController extends AbstractController
             foreach($panierProductInfo as $item){
 
                 // Récupere le prix du produits et on le multiplie par la quantité du panier
-                $totalItem = $item['produits']-> getPrice() * $item['quantity'];
+                $totalItem = $item['produits']-> getPrix() * $item['quantity'];
                 $totalPrice += $totalItem;
             }
         }
@@ -69,7 +69,7 @@ class PanierController extends AbstractController
         $session->set('panier', $panier);
 
         // redirection a l'index du panier (a voir si on enleve)
-        // return $this->redirectToRoute("panier_index");
+        return $this->redirectToRoute("panier_index");
     }
 
     /**
@@ -112,5 +112,7 @@ class PanierController extends AbstractController
         // On donne a la session le nouveau panier
         $session->set('panier', $panier);
 
+        // redirection a l'index du panier
+        return $this->redirectToRoute("panier_index");
     }
 }
