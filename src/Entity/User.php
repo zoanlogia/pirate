@@ -24,6 +24,11 @@ class User extends BaseUser
      */
     private $adresse;
 
+    /**
+     * @ORM\Column(type="string", length=15)
+     */
+    private $ville;
+
     public function __construct()
     {
         parent::__construct();
