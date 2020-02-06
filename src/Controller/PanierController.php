@@ -20,6 +20,7 @@ class PanierController extends AbstractController
 
         //Initialisation d'un array pour récuperer les informations des produits
         $panierProductInfo = [];
+        $totalPrice = 0;
 
         foreach($panier as $id => $quantity){
             // Initialisation du tableau associatif
@@ -29,10 +30,10 @@ class PanierController extends AbstractController
                 'quantity' => $quantity
             ];
 
-            $totalPrice = 0;
-
+            
             // Calcul du prix total du panier
             foreach($panierProductInfo as $item){
+
 
                 // Récupere le prix du produits et on le multiplie par la quantité du panier
                 if(!$item['produits']){
@@ -42,6 +43,7 @@ class PanierController extends AbstractController
                 $totalPrice += $totalItem;
             }
         }
+
 
         return $this->render('panier/index.html.twig', [
             'controller_name' => 'PanierController',
