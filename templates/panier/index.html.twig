@@ -35,22 +35,24 @@
             </thead>
             <tbody>
                 {% for item in items %}
-                    <tr>
-                        <td>{{ item.produits.nom }}</td>
-                        <td>{{ item.produits.image }}</td>
-                        <td>{{ item.produits.description }}</td>
-                        <td>{{ item.produits.prix }}</td>
-                        <td>{{ item.quantity }}</td>
-                        <td>{{ item.produits.prix * item.quantity }}</td>
-                        <td>
-                            <a href="{{ path('panier_subtract', {'id': item.produits.id}) }}" class="btn">Enlever un article</a>
-                        </td>
-                        <td>
-                            <a href="{{ path('panier_remove', {'id': item.produits.id}) }}" class="btn btn-danger btn-sm">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
+                    {% if  item.produits is not null %}
+                        <tr>
+                            <td>{{ item.produits.nom }}</td>
+                            <td>{{ item.produits.image }}</td>
+                            <td>{{ item.produits.description }}</td>
+                            <td>{{ item.produits.prix }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>{{ item.produits.prix * item.quantity }}</td>
+                            <td>
+                                <a href="{{ path('panier_subtract', {'id': item.produits.id}) }}" class="btn">Enlever un article</a>
+                            </td>
+                            <td>
+                                <a href="{{ path('panier_remove', {'id': item.produits.id}) }}" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endif %}
                 {% endfor %}
             </tbody>
             <tfoot>

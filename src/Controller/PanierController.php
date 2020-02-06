@@ -17,6 +17,7 @@ class PanierController extends AbstractController
         // On récupere ce qu'il y a dans la session, dans le panier
         $panier = $session->get('panier', []);
 
+
         //Initialisation d'un array pour récuperer les informations des produits
         $panierProductInfo = [];
 
@@ -34,6 +35,9 @@ class PanierController extends AbstractController
             foreach($panierProductInfo as $item){
 
                 // Récupere le prix du produits et on le multiplie par la quantité du panier
+                if(!$item['produits']){
+                    continue;
+                }
                 $totalItem = $item['produits']-> getPrix() * $item['quantity'];
                 $totalPrice += $totalItem;
             }
@@ -60,16 +64,19 @@ class PanierController extends AbstractController
         // Si le panier n'est pas vide on incrémente, sinon on prend 1
         if(!empty($panier[$id])){
             $panier[$id]++;
+            $this->addFlash('succes', 'Vous avez ajouté un article à votre panier');
         }
         else{
             $panier[$id] = 1;
+            $this->addFlash('succes', 'Vous avez ajouté un article à votre panier');
         }
 
         // On donne a la session le panier
         $session->set('panier', $panier);
 
-        // redirection a l'index du panier (a voir si on enleve)
-        return $this->redirectToRoute("panier_index");
+        
+        // redirection a l'index du panier (a voir si on enleve pour rester sur la page produit)
+        return $this->redirectToRoute("produits");
     }
 
     /**
