@@ -189,7 +189,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #4B3049;
+  color:#3C5135;
   font-family: "Poppins", sans-serif;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -201,7 +201,7 @@ p {
   line-height: 2;
   font-size: 15px;
   margin-bottom: 0px;
-  color: #795376;
+  color: #3C5135;
   font-weight: 400;
 }
 
@@ -209,7 +209,7 @@ p {
 h2 {
   font-size: 44px;
   line-height: 28px;
-  color: #4B3049;
+  color: #3C5135;
   font-weight: 600;
   line-height: 1.222;
 }
@@ -251,7 +251,7 @@ h5 {
 
 /* line 161, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 img {
-  max-width: 100%;
+  max-width: 25%;
 }
 
 /* line 165, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
@@ -288,7 +288,7 @@ button:focus,
 /* line 186, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 .section_tittle h2 {
   font-size: 36px;
-  color: #4B3049;
+  color:#3C5135;
   line-height: 27px;
   font-weight: 700;
   position: relative;
@@ -2180,7 +2180,7 @@ ul {
 
 /* line 12, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-  color: #4B3049;
+  color:#3C5135;
   font-size: 16px;
   padding: 35px 21px;
   font-family: "Rubik", sans-serif;
@@ -2191,7 +2191,7 @@ ul {
 
 /* line 20, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link:hover {
-  color: #795376 !important;
+  color: #3C5135 !important;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2284,7 +2284,7 @@ ul {
 
 /* line 89, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 .main_menu a i {
-  color: #4B3049 !important;
+  color:#3C5135 !important;
   position: relative;
   z-index: 1;
   font-size: 20px;
@@ -2498,7 +2498,7 @@ ul {
   left: 0;
   bottom: 0;
   background-color: #97ece1;
-  width: 196px;
+  width: 150px;
   height: 618px;
 }
 
@@ -2765,12 +2765,12 @@ ul {
 
 /* line 36, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .single_product_list .single_product_content h2 a {
-  color: #4B3049;
+  color:#3C5135;
 }
 
 /* line 38, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .single_product_list .single_product_content h2 a:hover {
-  color: #795376;
+  color: #3C5135;
 }
 
 @media (max-width: 991px) {
@@ -2895,7 +2895,7 @@ ul {
 
 /* line 122, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .product_image_area .owl-nav button.owl-prev:hover, .product_image_area .owl-nav button.owl-next:hover {
-  background-color: #795376;
+  background-color: #3C5135;
   color: #fff;
 }
 
@@ -2976,12 +2976,12 @@ ul {
 /* line 168, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .card_area .product_count_area p {
   margin-top: 0 !important;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 173, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .card_area .product_count {
-  border: 1px solid #795376;
+  border: 1px solid #3C5135;
   margin: 0 35px;
 }
 
@@ -3010,9 +3010,9 @@ ul {
 
 /* line 189, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 .card_area .product_count input {
-  background-color: #795376;
+  background-color: #3C5135;
   color: #fff;
-  border: 1px solid #795376;
+  border: 1px solid #3C5135;
   color: #fff;
 }
 
@@ -3097,7 +3097,7 @@ input:focus {
 
 /* line 37, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
 .single_product_item h3 a {
-  color: #4B3049;
+  color:#3C5135;
 }
 
 /* line 39, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
@@ -3199,7 +3199,7 @@ input:focus {
   font-family: 'Flaticon';
   height: 50px;
   width: 50px;
-  background-color: #E4D3DF;
+  background-color:  #3C5135;
   font-size: 14px;
   border-radius: 50%;
   line-height: 50px;
@@ -3213,8 +3213,8 @@ input:focus {
   font-size: 14px;
   line-height: 40px;
   border-radius: 50%;
-  border: 1px solid #795376;
-  color: #795376;
+  border: 1px solid #3C5135;
+  color: #3C5135;
   position: absolute;
   left: -26%;
   top: 48%;
@@ -3224,7 +3224,7 @@ input:focus {
 
 /* line 68, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_client_review.scss */
 .client_review .owl-nav button.owl-prev:hover, .client_review .owl-nav button.owl-next:hover {
-  background-color: #795376;
+  background-color: #3C5135;
   color: #fff;
 }
 
@@ -3401,7 +3401,7 @@ input:focus {
 
 /* line 14, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
 .product_sidebar .single_sedebar ::placeholder {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 17, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
@@ -3419,7 +3419,7 @@ input:focus {
   padding: 13px 25px;
   width: 100%;
   line-height: 22px;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 34, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
@@ -3434,7 +3434,7 @@ input:focus {
 
 /* line 41, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
 .select_option .select_option_dropdown a {
-  color: #795376;
+  color: #3C5135;
 }
 
 /************* our offer *****************/
@@ -3738,7 +3738,7 @@ input:focus {
 .single-product .product-btm h5 {
   margin-bottom: 0px;
   font-size: 18px;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 65, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -3833,7 +3833,7 @@ input:focus {
 .most_p_list .media .media-body h3 {
   font-size: 16px;
   font-weight: 500;
-  color: #795376;
+  color: #3C5135;
   margin-bottom: 0px;
 }
 
@@ -3863,7 +3863,7 @@ input:focus {
   margin-top: 15px;
   padding-top: 15px;
   padding-left: 25px;
-  border-top: 1px solid #795376;
+  border-top: 1px solid #3C5135;
 }
 
 /* line 189, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -4631,7 +4631,7 @@ input:focus {
   color: #2a2a2a;
   margin-bottom: 0px;
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -4652,7 +4652,7 @@ input:focus {
 /* line 916, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .product_description_area .tab-content .total_rate .rating_list .list li a {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 920, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -4683,7 +4683,7 @@ input:focus {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  color: #795376;
+  color: #3C5135;
   margin-bottom: 0px;
   white-space: nowrap;
 }
@@ -4705,7 +4705,7 @@ input:focus {
 
 /* line 980, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .review_item p {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 984, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -4742,7 +4742,7 @@ input:focus {
 .review_item .media .media-body h5 {
   font-size: 13px;
   font-weight: normal;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 1013, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -4848,7 +4848,7 @@ input:focus {
   font-size: 14px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   border-bottom: 0px !important;
 }
 
@@ -5036,7 +5036,7 @@ input:focus {
 /* line 1264, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .cart_inner .table tbody tr.shipping_area .shipping_box .list li {
   margin-bottom: 12px;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 1267, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -5053,7 +5053,7 @@ input:focus {
 .cart_inner .table tbody tr.shipping_area .shipping_box .list li a {
   padding-right: 30px;
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   position: relative;
 }
 
@@ -5103,7 +5103,7 @@ input:focus {
 
 /* line 1326, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .cart_inner .table tbody tr.shipping_area .shipping_box h6 i {
-  color: #795376;
+  color: #3C5135;
   padding-left: 5px;
 }
 
@@ -5127,7 +5127,7 @@ input:focus {
 .cart_inner .table tbody tr.shipping_area .shipping_box .shipping_select .list li {
   font-size: 14px;
   font-weight: normal;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 1356, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -5265,7 +5265,7 @@ input:focus {
   border-radius: 3px;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5273,7 +5273,7 @@ input:focus {
 .returning_customer .contact_form .form-group input.placeholder {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5281,7 +5281,7 @@ input:focus {
 .returning_customer .contact_form .form-group input:-moz-placeholder {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5289,7 +5289,7 @@ input:focus {
 .returning_customer .contact_form .form-group input::-moz-placeholder {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5297,7 +5297,7 @@ input:focus {
 .returning_customer .contact_form .form-group input::-webkit-input-placeholder {
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5324,7 +5324,7 @@ input:focus {
   margin-top: 20px;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
 }
 
@@ -5441,27 +5441,27 @@ input:focus {
 /* line 1607, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .billing_details .contact_form .form-group input {
   border-radius: 3px;
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 65, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .billing_details .contact_form .form-group input.placeholder {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 68, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .billing_details .contact_form .form-group input:-moz-placeholder {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 71, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .billing_details .contact_form .form-group input::-moz-placeholder {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 74, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .billing_details .contact_form .form-group input::-webkit-input-placeholder {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 1616, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -5478,7 +5478,7 @@ input:focus {
 
 /* line 1625, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .billing_details .contact_form .form-group .country_select span {
-  color: #795376;
+  color: #3C5135;
 }
 
 /* line 1629, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
@@ -5527,7 +5527,7 @@ input:focus {
 /* line 1672, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .order_box .list li a {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-weight: normal;
   border-bottom: 1px solid #eeeeee;
   display: block;
@@ -5563,7 +5563,7 @@ input:focus {
 
 /* line 1711, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .order_box .list_2 li a span {
-  color: #795376;
+  color: #3C5135;
   text-transform: capitalize;
 }
 
@@ -5698,7 +5698,7 @@ input:focus {
   box-shadow: none;
   border-radius: 0px;
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
 }
@@ -5706,7 +5706,7 @@ input:focus {
 /* line 65, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input.placeholder {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
 }
@@ -5714,7 +5714,7 @@ input:focus {
 /* line 68, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input:-moz-placeholder {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
 }
@@ -5722,7 +5722,7 @@ input:focus {
 /* line 71, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-moz-placeholder {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
 }
@@ -5730,7 +5730,7 @@ input:focus {
 /* line 74, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_mixins.scss */
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-webkit-input-placeholder {
   font-size: 14px;
-  color: #795376;
+  color: #3C5135;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
 }
@@ -5864,9 +5864,9 @@ input:focus {
 
 /* line 1960, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .login_part .login_part_text {
-  background-image: -moz-linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
-  background-image: -webkit-linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
-  background-image: linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
+  background-image: -moz-linear-gradient(90deg, #B08EAD 0%,#3C5135 64%, #B08EAD 100%);
+  background-image: -webkit-linear-gradient(90deg, #B08EAD 0%,#3C5135 64%, #B08EAD 100%);
+  background-image: linear-gradient(90deg, #B08EAD 0%,#3C5135 64%, #B08EAD 100%);
   background-size: 200% auto;
 }
 
@@ -8445,7 +8445,7 @@ h6 {
 .about_us .about_us_content h3 {
   font-size: 24px;
   line-height: 1.5;
-  color: #4B3049;
+  color:#3C5135;
   margin: 5px 0 60px;
   font-weight: 400;
 }
@@ -8464,7 +8464,7 @@ h6 {
   width: 84px;
   line-height: 84px;
   border-radius: 50%;
-  background-color: #795376;
+  background-color: #3C5135;
   display: inline-block;
   position: absolute;
   left: 0;
@@ -8510,7 +8510,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #B08EAD;
+  background-color: #97ece1;
 }
 
 /* line 8, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_breadcrumb.scss */
@@ -8590,7 +8590,7 @@ h6 {
 /* line 31, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 .footer_part .footer_iner .footer_menu_item a {
   display: inline-block;
-  color: #4B3049;
+  color:#3C5135;
   font-size: 16px;
   padding: 0 17px;
 }
@@ -8632,7 +8632,7 @@ h6 {
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background-color: #4B3049;
+  background-color: #52707F;
   line-height: 45px;
   color: #fff;
   display: inline-block;
@@ -8666,7 +8666,7 @@ h6 {
 
 /* line 80, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 .footer_part .copyright_part .copyright_text p a {
-  color: #4B3049;
+  color:#3C5135;
 }
 
 @media (max-width: 991px) {
@@ -8678,7 +8678,7 @@ h6 {
 
 /* line 89, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 .footer_part .copyright_part .copyright_link a {
-  color: #4B3049;
+  color:#3C5135;
   margin-left: 40px;
 }
 
@@ -8688,6 +8688,10 @@ h6 {
     margin-left: auto;
     margin-right: 25px;
   }
+}
+
+.owl-carousel .owl-stage{
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=../css/style.map */
