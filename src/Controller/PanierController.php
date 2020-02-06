@@ -30,7 +30,7 @@ class PanierController extends AbstractController
             ];
 
             $totalPrice = 0;
-
+            
             // Calcul du prix total du panier
             foreach($panierProductInfo as $item){
 
