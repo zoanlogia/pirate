@@ -35,7 +35,7 @@
                         {{ produits.prix }}
                         €
                     </h2>
-                    <img class="img-fluid rounded" src="{{ asset('img/') }} {{ produits.image }}" alt="Image de {{ produits.nom }}">
+                    <img class="img-fluid rounded" src="{{ asset('img/') }}{{ produits.image }}" alt="Image de {{ produits.nom }}">
                     <hr>
                     <a href="{{ path('panier_add', {'id': produits.id}) }}" class="btn btn-success float-right">
                         <i class="fas fa-shopping-cart mr-1"></i>
@@ -46,9 +46,7 @@
                             <i class="fas fa-thumbs-up"></i>
                         {% else %}
                             <i class="far fa-thumbs-up"></i>
-                        {% endif %}
-                        
-                        
+                        {% endif %}                                                
                         <span class="js-likes">{{ produits.likes | length }}</span>
                         <span class="js-label">J'aime</span>
                     </a>
@@ -69,8 +67,9 @@
             const icone = this.querySelector('i');
 
             axios.get(url).then(function(response){
-                spanCount.textContent = response.data.likes;
 
+                spanCount.textContent = response.data.likes;
+                
                 if(icone.classList.contains('fas')){
                      icone.classList.replace('fas', 'far');
                 }

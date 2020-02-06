@@ -68,6 +68,10 @@ class ProduitsController extends AbstractController
         $em->persist($like);
         $em->flush();
 
-        return $this->json(['code' => 200, 'message' => 'Ca marche bien'], 200);    
+        return $this->json([
+            'code' => 200,
+            'message' => 'Ca marche bien',
+            'likes' => $postLikeRepository->count(['produits' => $produits])
+        ], 200);    
     }
 }
