@@ -27,9 +27,9 @@ class PanierController extends AbstractController
                 'produits' => $produitsRepository->find($id),
                 'quantity' => $quantity
             ];
-
+            
             $totalPrice = 0;
-
+            
             // Calcul du prix total du panier
             foreach($panierProductInfo as $item){
 

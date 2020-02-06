@@ -1,30 +1,37 @@
-{% block title %}Les produits
+{% block stylesheet %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 {% endblock %}
-
 {% block body %}
-    <div class="bg-light p-3">
-        <h1>Les produits</h1>
+
+
+    <div class="card m-3">
+            <h1>Les produits</h1>
+        </div>
+
+        <div class="row">
+            {% for produits in produit %}
+
+            <div class="card" style="width: 18rem;">
+    
+    <div class="card-body">
+    
+    <img src="{{asset('img/') }}{{produits.image}}" alt="Image de {{ produits.nom }}" class="card-img-top">
+    <h2>{{ produits.type }}</h2>
+        <h5 class="card-title">{{ produits.nom }}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+    <a href="{{ path('panier_add', {'id': produits.id}) }}" class="btn btn-outline-secondary btn-block">
+
+            <h4>{{ produits.prix }}
+                            € Ajouter  <img src="{{ asset ('img/panier.png') }}"/></h4>
+
+            </a>
+                       
     </div>
+    </div>
+            
 
-    <div class="row">
-        {% for produits in produit %}
-            <div class="col-4 mt-4">
-                <div class="border border-dark rounded p-2 clearfix">
-                    <h2>
-                        {{ produits.nom }}
-                        -
-                        {{ produits.image }}
-                        €
-                    </h2>
-                    <img class="img-fluid rounded" src="{{ produits.image }}" alt="Image de {{ produits.nom }}">
-                    <hr>
-                    <a href="{{ path('panier_add', {'id': produits.id}) }}" class="btn btn-success float-right">
-                        <i class="fas fa-shopping-cart mr-1"></i>
-                        Ajouter
-                    </a>
-                </div>
-
-            </div>
         {% endfor %}
-    </div>
+        </div>
+    
 {% endblock %}
