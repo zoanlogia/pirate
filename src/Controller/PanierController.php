@@ -20,6 +20,7 @@ class PanierController extends AbstractController
 
         //Initialisation d'un array pour récuperer les informations des produits
         $panierProductInfo = [];
+        $totalPrice = 0;
 
         foreach($panier as $id => $quantity){
             // Initialisation du tableau associatif
@@ -29,7 +30,7 @@ class PanierController extends AbstractController
                 'quantity' => $quantity
             ];
 
-            $totalPrice = 0;
+            
             
             // Calcul du prix total du panier
             foreach($panierProductInfo as $item){
