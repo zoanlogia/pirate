@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\ProduitsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -17,7 +18,7 @@ class PanierController extends AbstractController
         // On récupere ce qu'il y a dans la session, dans le panier
         $panier = $session->get('panier', []);
 
-
+        
         //Initialisation d'un array pour récuperer les informations des produits
         $panierProductInfo = [];
         $totalPrice = 0;
@@ -29,7 +30,7 @@ class PanierController extends AbstractController
                 'produits' => $produitsRepository->find($id),
                 'quantity' => $quantity
             ];
-
+        }
             
             // Calcul du prix total du panier
             foreach($panierProductInfo as $item){
@@ -42,7 +43,7 @@ class PanierController extends AbstractController
                 $totalItem = $item['produits']-> getPrix() * $item['quantity'];
                 $totalPrice += $totalItem;
             }
-        }
+        
 
 
         return $this->render('panier/index.html.twig', [
@@ -105,7 +106,8 @@ class PanierController extends AbstractController
      * @Route("panier/subtract/{id}", name="panier_subtract")
      */
     // Fonction pour enlever un produits
-    public function subtractProduits($id, SessionInterface $session){
+    public function subtractProduits($id, SessionInterface $session)
+    {
         // Récupere le panier
         $panier = $session->get('panier', []);
 
