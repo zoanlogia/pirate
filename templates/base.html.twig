@@ -122,7 +122,7 @@
 {% block main %}    <!-- banner part start-->
 
 {% for message in app.flashes('success') %}
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success col-md-4 form-group" role="alert" >
         {{ message }}
     </div>
 {% endfor %}
