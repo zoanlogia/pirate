@@ -294,7 +294,7 @@ h5 {
 /* line 161, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 
 img {
-    max-width: 25%;
+    max-width: 20%;
 }
 
 
@@ -2707,6 +2707,7 @@ ul {
     text-transform: capitalize;
     line-height: 16px;
     font-weight: 400;
+    display: ruby-text;
 }
 
 
@@ -10641,7 +10642,7 @@ h6 {
 
 .footer_part .copyright_part {
     background-color: #D7EDD1;
-    padding: 30px 0px;
+    padding: 80px 0px;
 }
 
 
