@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {#
 {% extends "base.html.twig" %}
@@ -112,11 +113,38 @@
 </header>
 {% endblock %}
 {% block body %}
+=======
+<!--  extends 'base.html.twig' a remettre -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}Welcome!
+            {% endblock %}
+        </title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="{{asset ('css/style.css')}}">
+            
+        {% endblock %}
+         
+    </head>
+
+{% block body %}
+
+>>>>>>> 3f3c6798b6b373d5a8b3a4d4328dc0e8be4f0146
     <div>
         <h1>Votre panier</h1>
     </div>
     
+<<<<<<< HEAD
   
+=======
+    <!-- si le panier n'est pas vide (verification de la taille de items)  -->
+>>>>>>> 3f3c6798b6b373d5a8b3a4d4328dc0e8be4f0146
     {% if items | length > 0 %}
         <table class="table">
             <thead>
@@ -166,6 +194,7 @@
     {% endif %}
 
 {% endblock %}
+<<<<<<< HEAD
                     {% block footer %}
                         <footer class="footer_part">
                             <div class="footer_iner">
@@ -210,3 +239,6 @@
                         <script src="{{ asset ('js/mail-script.js') }}"></script>
                         <script src="{{ asset ('js/custom.js') }}"></script>
                         {% endblock %}
+=======
+</html>
+>>>>>>> 3f3c6798b6b373d5a8b3a4d4328dc0e8be4f0146

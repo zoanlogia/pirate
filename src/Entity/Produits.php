@@ -45,16 +45,6 @@ class Produits
      */
     private $prix;
 
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\PostLike", mappedBy="produits")
-     */
-    private $likes;
-
-    public function __construct()
-    {
-        $this->likes = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;
