@@ -1,51 +1,46 @@
 {% extends 'base.html.twig' %}
 {% block main %}
-{% block message %}
+    {% block message %}
             {% for succes in app.flashes('succes') %}
                 <div class="danger alert alert-danger">
                     {{ succes }}
                 </div>
             {% endfor %}
-    {% endblock %}
+    {% endblock %}    
+    <div class="bg-light p-3">
+        <h1>Les produits</h1>
+    </div>
 
-<div>
-     <h1>Nos produits</h1>
- <span>
- 
- </i>
- </span>
-{% for produits in produit %}
-    <div class="clear"></div>
-   
-    <div>
-      
-        <div class="item">
-            <img src="{{ asset('img/') }}{{ produits.image }}" alt="Image de {{ produits.nom }}">
-             <h2>
-             {{ produits.nom }}
+    <div class="row">
+        {% for produits in produit %}
+            <div class="col-4 mt-4">
+                <div class="border border-dark rounded p-2 clearfix">
+                    <h2>
+                        {{ produits.nom }}
                         -
                         {{ produits.prix }}
                         €
-             </h2>
-             <a href="{{ path('panier_add', {'id': produits.id}) }}" class="btn btn-success float-right">
-
-            <p>Price: <em>$449</em>
-            </p>
-            <button class="add-to-cart" type="button">Add to cart</button>
-            <a href="{{ path('produits_like', {'id': produits.id}) }}" class="btn btn-link js-like">
+                    </h2>
+                    <img class="rounded float-left" src="{{ asset('img/') }}{{ produits.image }}" alt="Image de {{ produits.nom }}">
+                    <hr>
+                    <a href="{{ path('panier_add', {'id': produits.id}) }}" class="btn btn-success float-right">
+                        <i class="fas fa-shopping-cart mr-1"></i>
+                        Ajouter
+                    </a>
+                    <a href="{{ path('produits_like', {'id': produits.id}) }}" class="btn btn-link js-like">
                         {% if app.user and produits.isLikedByUser(app.user) %}
+                            <i class="fas fa-thumbs-up"></i>
                         {% else %}
                             <i class="far fa-thumbs-up"></i>
                         {% endif %}                                                
                         <span class="js-likes">{{ produits.id | length }}</span>
                         <span class="js-label">J'aime</span>
                     </a>
-        </div>
-        
-    
+                </div>
+
+            </div>
+        {% endfor %}
     </div>
-  {% endfor %}
-</div>
 {% endblock %}
 {% block javascripts %}
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

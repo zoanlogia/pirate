@@ -18,7 +18,7 @@ class Produits
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $id;
+    public $id;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -28,7 +28,7 @@ class Produits
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $nom;
+    public $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -43,7 +43,18 @@ class Produits
     /**
      * @ORM\Column(type="float")
      */
-    private $prix;
+    public $prix;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\PostLike", mappedBy="produits")
+     */
+    private $likes;
+
+
+    public function __construct()
+    {
+        $this->likes = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -149,4 +160,6 @@ class Produits
 
         return false;
     }
+
+   
 }

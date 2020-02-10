@@ -1,11 +1,11 @@
 /**************** extend css start ****************/
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rubik:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rubik:300,400,500,700&display=swap');
 
 /* line 2, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_extends.scss */
 
 .form-contact .form-group .btn_1 i {
-    background-image: linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+    background-image: linear-gradient( 16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
 }
 
 
@@ -25,7 +25,7 @@
 /* line 4, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -219,8 +219,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: #4B3049;
-    font-family: "Poppins", sans-serif;
+    color: #4b3049;
+    font-family: 'Poppins', sans-serif;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-align: center;
@@ -230,7 +230,7 @@ h6 {
 /* line 117, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 
 p {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: 2;
     font-size: 15px;
     margin-bottom: 0px;
@@ -244,7 +244,7 @@ p {
 h2 {
     font-size: 44px;
     line-height: 28px;
-    color: #4B3049;
+    color: #4b3049;
     font-weight: 600;
     line-height: 1.222;
 }
@@ -335,7 +335,7 @@ button:focus,
 
 .section_tittle h2 {
     font-size: 36px;
-    color: #4B3049;
+    color: #4b3049;
     line-height: 27px;
     font-weight: 700;
     position: relative;
@@ -384,7 +384,7 @@ button:focus,
     color: #556172;
     text-transform: capitalize;
     line-height: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 576px) {
@@ -518,7 +518,7 @@ ul {
 
 @media (max-width: 1200px) {
     /* line 306, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
-    [class*="hero-ani-"] {
+    [class*='hero-ani-'] {
         display: none !important;
     }
 }
@@ -626,8 +626,8 @@ ul {
     display: inline-block;
     padding: 17px 50px;
     border-radius: 5px;
-    background-color: #B08EAD;
-    border: 2px solid #B08EAD;
+    background-color: #b08ead;
+    border: 2px solid #b08ead;
     font-size: 15px;
     font-weight: 500;
     -webkit-transition: 0.5s;
@@ -641,7 +641,7 @@ ul {
 
 .btn_1:hover {
     background-color: #fff;
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 @media (max-width: 991px) {
@@ -659,10 +659,10 @@ ul {
     padding: 18px 36px;
     border-radius: 5px;
     background-color: transparent;
-    border: 1px solid #B08EAD;
+    border: 1px solid #b08ead;
     font-size: 15px;
     font-weight: 700;
-    color: #B08EAD;
+    color: #b08ead;
     text-transform: uppercase;
     font-weight: 400;
     -webkit-transition: 0.5s;
@@ -673,7 +673,7 @@ ul {
 /* line 56, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_button.scss */
 
 .btn_3:hover {
-    background-color: #B08EAD;
+    background-color: #b08ead;
     color: #fff;
 }
 
@@ -695,12 +695,12 @@ ul {
     text-align: center;
     background-color: #fff;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #1e1e1e;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     text-transform: capitalize;
 }
 
@@ -709,7 +709,7 @@ ul {
 
 .btn_2:hover {
     color: #fff !important;
-    background-color: #B08EAD;
+    background-color: #b08ead;
 }
 
 @media (max-width: 991px) {
@@ -725,7 +725,7 @@ ul {
 /* line 94, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_button.scss */
 
 .btn_4 {
-    color: #B08EAD;
+    color: #b08ead;
     font-size: 15px;
     font-weight: 700;
     margin-top: 53px;
@@ -766,7 +766,7 @@ ul {
     color: #fff;
     border: 1px solid #edeff2;
     text-transform: uppercase;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     cursor: pointer;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -860,7 +860,7 @@ ul {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -1016,7 +1016,7 @@ ul {
 /* line 131, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .single-blog:hover .thumb:after {
-    opacity: .7;
+    opacity: 0.7;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -1215,7 +1215,7 @@ ul {
 /* line 303, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .causes_item .causes_img .c_parcent span:before {
-    content: "75%";
+    content: '75%';
     position: absolute;
     right: -10px;
     bottom: 0px;
@@ -1502,7 +1502,7 @@ ul {
 /* line 540, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .blog_details a:hover {
-    color: #B08EAD !important;
+    color: #b08ead !important;
 }
 
 
@@ -1550,7 +1550,7 @@ ul {
 /* line 573, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .blog-info-link li::after {
-    content: "|";
+    content: '|';
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -1566,7 +1566,7 @@ ul {
 /* line 584, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .blog-info-link::after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
     display: table;
@@ -1588,7 +1588,7 @@ ul {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     padding: 8px 15px;
     border-radius: 5px;
 }
@@ -1648,7 +1648,7 @@ ul {
 /* line 648, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .blog_right_sidebar .widget_title::after {
-    content: "";
+    content: '';
     display: block;
     padding-top: 15px;
     border-bottom: 1px solid #f0e9ff;
@@ -1867,7 +1867,7 @@ ul {
 /* line 835, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #B08EAD;
+    background: #b08ead;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -2181,7 +2181,7 @@ ul {
 /* line 1201, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .single-post-area .blog-author a:hover {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -2267,7 +2267,7 @@ ul {
 /* line 1257, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -2321,7 +2321,7 @@ ul {
 /* line 1292, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 @media (max-width: 991px) {
@@ -2593,8 +2593,8 @@ ul {
 /* line 1496, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_blog.scss */
 
 .single_sidebar_widget .btn_1:hover {
-    color: #B08EAD !important;
-    border: 1px solid #B08EAD;
+    color: #b08ead !important;
+    border: 1px solid #b08ead;
 }
 
 
@@ -2630,7 +2630,7 @@ ul {
 /* line 18, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_blog.scss */
 
 .single_blog_post .single_blog .single_appartment_content p a {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -2698,10 +2698,10 @@ ul {
 /* line 12, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 
 .main_menu .main-menu-item ul li .nav-link {
-    color: #4B3049;
+    color: #4b3049;
     font-size: 16px;
     padding: 35px 21px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-transform: capitalize;
     line-height: 16px;
     font-weight: 400;
@@ -2750,7 +2750,7 @@ ul {
     max-width: 1140px;
     z-index: 999;
     text-align: center;
-    background: #B08EAD;
+    background: #b08ead;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -2826,7 +2826,7 @@ ul {
 /* line 89, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 
 .main_menu a i {
-    color: #4B3049 !important;
+    color: #4b3049 !important;
     position: relative;
     z-index: 1;
     font-size: 20px;
@@ -2838,9 +2838,9 @@ ul {
 
 .main_menu .cart .dropdown-toggle::after {
     display: inline-block;
-    margin-left: .255em;
-    vertical-align: .255em;
-    content: "";
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: '';
     border: 0px solid transparent;
 }
 
@@ -2868,7 +2868,7 @@ ul {
 /* line 121, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 
 .menu_fixed .active_color {
-    color: #B08EAD !important;
+    color: #b08ead !important;
 }
 
 
@@ -2881,7 +2881,7 @@ ul {
     transform: scale(1, 0);
     display: block;
     border: 0px solid transparent;
-    background-color: #B08EAD;
+    background-color: #b08ead;
 }
 
 
@@ -2891,7 +2891,7 @@ ul {
     font-size: 14px;
     padding: 8px 20px !important;
     color: #fff !important;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     text-transform: capitalize;
 }
 
@@ -2951,11 +2951,11 @@ ul {
     .dropdown:hover .show {
         transform: scale(1);
         display: block;
-        color: #B08EAD;
+        color: #b08ead;
     }
     /* line 208, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
     .dropdown .dropdown-item:hover {
-        color: #B08EAD !important;
+        color: #b08ead !important;
     }
     /* line 213, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
     .navbar-brand img {
@@ -3058,10 +3058,10 @@ ul {
 
 .banner_part:after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: 0;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     width: 196px;
     height: 618px;
 }
@@ -3151,7 +3151,7 @@ ul {
 /* line 70, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_banner.scss */
 
 .banner_part .banner_text h1 span {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -3331,7 +3331,7 @@ ul {
 .single_product_list .single_product_content h5 {
     font-weight: 500;
     font-size: 20px;
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 @media (max-width: 991px) {
@@ -3355,7 +3355,7 @@ ul {
 /* line 36, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_single_product.scss */
 
 .single_product_list .single_product_content h2 a {
-    color: #4B3049;
+    color: #4b3049;
 }
 
 
@@ -3490,9 +3490,9 @@ ul {
     font-size: 14px;
     line-height: 40px;
     border-radius: 50%;
-    border: 1px solid #E4D3DF;
+    border: 1px solid #e4d3df;
     color: #fff;
-    background-color: #E4D3DF;
+    background-color: #e4d3df;
     position: absolute;
     left: 30px;
     top: 54%;
@@ -3664,7 +3664,7 @@ input:focus {
 /* line 1, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
 
 .trending_items {
-    background-color: #F4EDF2;
+    background-color: #f4edf2;
     padding: 200px 0 130px;
 }
 
@@ -3741,14 +3741,14 @@ input:focus {
 /* line 37, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
 
 .single_product_item h3 a {
-    color: #4B3049;
+    color: #4b3049;
 }
 
 
 /* line 39, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_trending_items.scss */
 
 .single_product_item h3 a:hover {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -3778,7 +3778,7 @@ input:focus {
 .client_review {
     padding: 100px 0;
     text-align: center;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     position: relative;
 }
 
@@ -3852,14 +3852,14 @@ input:focus {
 
 .client_review .client_img:after {
     position: absolute;
-    content: "";
+    content: '';
     right: -8px;
     bottom: -10px;
     content: '\f100';
     font-family: 'Flaticon';
     height: 50px;
     width: 50px;
-    background-color: #E4D3DF;
+    background-color: #e4d3df;
     font-size: 14px;
     border-radius: 50%;
     line-height: 50px;
@@ -3941,7 +3941,7 @@ input:focus {
 
 .feature_part .single_feature_part {
     text-align: center;
-    border: 1px solid #E4D3DF;
+    border: 1px solid #e4d3df;
     padding: 35px;
     margin-top: 100px;
 }
@@ -3991,7 +3991,7 @@ input:focus {
 /* line 1, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_subscribe_part.scss */
 
 .subscribe_part {
-    background-color: #4B3049;
+    background-color: #4b3049;
 }
 
 
@@ -4075,7 +4075,7 @@ input:focus {
 /* line 43, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_subscribe_part.scss */
 
 .subscribe_part .subscribe_form ::placeholder {
-    color: #E4D3DF;
+    color: #e4d3df;
 }
 
 
@@ -4093,9 +4093,9 @@ input:focus {
 /* line 6, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
 
 .product_sidebar .single_sedebar input {
-    background-color: #F4EDF2;
+    background-color: #f4edf2;
     border-radius: 50px;
-    border: 1px solid #F4EDF2;
+    border: 1px solid #f4edf2;
     padding: 13px 25px;
     width: 100%;
     line-height: 22px;
@@ -4121,9 +4121,9 @@ input:focus {
 /* line 25, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
 
 .select_option .select_option_list {
-    background-color: #F4EDF2;
+    background-color: #f4edf2;
     border-radius: 50px;
-    border: 1px solid #F4EDF2;
+    border: 1px solid #f4edf2;
     padding: 13px 25px;
     width: 100%;
     line-height: 22px;
@@ -4134,9 +4134,9 @@ input:focus {
 /* line 34, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product_list.scss */
 
 .select_option .select_option_dropdown {
-    background-color: #F4EDF2;
+    background-color: #f4edf2;
     border-radius: 10px;
-    border: 1px solid #F4EDF2;
+    border: 1px solid #f4edf2;
     padding: 13px 25px;
     width: 100%;
     margin-top: 10px;
@@ -4252,7 +4252,7 @@ input:focus {
     line-height: 60px;
     padding: 0px 45px;
     border: 0px solid transparent;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
@@ -4310,7 +4310,7 @@ input:focus {
 /* line 20, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_best_seller.scss */
 
 .best_seller .single_product_item .single_product_text a {
-    color: #B08EAD;
+    color: #b08ead;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
@@ -4494,7 +4494,7 @@ input:focus {
 
 .single-product .product-img .p_icon a:hover {
     color: #fff;
-    background: #B08EAD;
+    background: #b08ead;
 }
 
 
@@ -4531,7 +4531,7 @@ input:focus {
 /* line 65, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .single-product .product-btm span {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 16px;
@@ -4549,7 +4549,7 @@ input:focus {
 /* line 82, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .single-product:hover .product-btm h4 {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -4728,8 +4728,8 @@ input:focus {
 
 /* line 204, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
-.widgets_inner input[type=checkbox],
-.widgets_inner input[type=radio] {
+.widgets_inner input[type='checkbox'],
+.widgets_inner input[type='radio'] {
     margin-right: 15px;
 }
 
@@ -4765,7 +4765,7 @@ input:focus {
 .l_w_title h3 {
     margin-bottom: 20px;
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #2a2a2a;
     font-weight: 500;
     line-height: 40px;
@@ -4870,8 +4870,8 @@ input:focus {
 
 .p_filter_widgets .list li.active a:before,
 .p_filter_widgets .list li:hover a:before {
-    background: #B08EAD;
-    border-color: #B08EAD;
+    background: #b08ead;
+    border-color: #b08ead;
 }
 
 
@@ -4930,7 +4930,7 @@ input:focus {
 
 .product_top_bar .left_dorp .sorting span {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #555555;
 }
 
@@ -4947,7 +4947,7 @@ input:focus {
 
 .product_top_bar .left_dorp .sorting .list li {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #555555;
 }
 
@@ -4955,7 +4955,7 @@ input:focus {
 /* line 366, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .product_top_bar .left_dorp .sorting:after {
-    content: "\f0d7";
+    content: '\f0d7';
     font: normal normal normal 14px/1 FontAwesome;
     transform: rotate(0);
     border: none;
@@ -4984,7 +4984,7 @@ input:focus {
 
 .product_top_bar .left_dorp .show span {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #555555;
 }
 
@@ -5001,7 +5001,7 @@ input:focus {
 
 .product_top_bar .left_dorp .show .list li {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #555555;
 }
 
@@ -5009,7 +5009,7 @@ input:focus {
 /* line 405, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .product_top_bar .left_dorp .show:after {
-    content: "\f0d7";
+    content: '\f0d7';
     font: normal normal normal 14px/1 FontAwesome;
     transform: rotate(0);
     border: none;
@@ -5047,7 +5047,7 @@ input:focus {
 /* line 448, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .product_top_bar .single_product_menu p span {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -5294,7 +5294,7 @@ input:focus {
 /* line 625, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .s_product_img .carousel .carousel-indicators li:before {
-    content: "";
+    content: '';
     background: rgba(197, 50, 45, 0.8);
     position: absolute;
     left: 0px;
@@ -5358,7 +5358,7 @@ input:focus {
 .s_product_text h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #B08EAD;
+    color: #b08ead;
     margin-bottom: 15px;
 }
 
@@ -5374,7 +5374,7 @@ input:focus {
 
 .s_product_text .list li a {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
     color: #555555;
 }
@@ -5398,7 +5398,7 @@ input:focus {
 /* line 716, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .s_product_text .list li a.active {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -5494,7 +5494,7 @@ input:focus {
 
 .cart_area .product_count .input-number-increment:after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: 7px;
     width: 100%;
@@ -5597,9 +5597,9 @@ input:focus {
 /* line 862, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .product_description_area .nav.nav-tabs li a.active {
-    background: #B08EAD;
+    background: #b08ead;
     color: #fff;
-    border-color: #B08EAD;
+    border-color: #b08ead;
 }
 
 
@@ -5624,7 +5624,7 @@ input:focus {
 /* line 882, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .product_description_area .tab-content .total_rate .box_total h4 {
-    color: #B08EAD;
+    color: #b08ead;
     font-size: 48px;
     font-weight: bold;
 }
@@ -5662,7 +5662,7 @@ input:focus {
 .product_description_area .tab-content .total_rate .rating_list h3 {
     font-size: 18px;
     color: #2a2a2a;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -5711,7 +5711,7 @@ input:focus {
 
 .product_description_area .tab-content .table tbody tr td h5 {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
     color: #795376;
     margin-bottom: 0px;
@@ -5775,7 +5775,7 @@ input:focus {
     margin-bottom: 0px;
     font-size: 14px;
     color: #2a2a2a;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin-bottom: 8px;
 }
 
@@ -5805,7 +5805,7 @@ input:focus {
     line-height: 32px;
     border-radius: 16px;
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #2a2a2a;
     position: absolute;
     right: 0px;
@@ -5816,8 +5816,8 @@ input:focus {
 /* line 1026, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .review_item .media .media-body .reply_btn:hover {
-    background: #B08EAD;
-    border-color: #B08EAD;
+    background: #b08ead;
+    border-color: #b08ead;
     color: #fff;
 }
 
@@ -5931,7 +5931,7 @@ input:focus {
     border-top: 0px;
     font-size: 14px;
     font-weight: 500;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     border-bottom: 0px !important;
 }
@@ -5983,7 +5983,7 @@ input:focus {
 .cart_inner .table tbody tr td h5 {
     font-size: 14px;
     color: #2a2a2a;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin-bottom: 0px;
 }
 
@@ -6016,7 +6016,7 @@ input:focus {
 /* line 1167, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .cart_inner .table tbody tr td .product_count .increase:before {
-    content: "";
+    content: '';
     height: 40px;
     width: 1px;
     position: absolute;
@@ -6029,7 +6029,7 @@ input:focus {
 /* line 1177, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .cart_inner .table tbody tr td .product_count .increase:after {
-    content: "";
+    content: '';
     height: 1px;
     width: 30px;
     position: absolute;
@@ -6085,7 +6085,7 @@ input:focus {
     height: 40px;
     font-size: 14px;
     color: #cccccc;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
     margin-right: -3px;
     outline: none;
@@ -6098,7 +6098,7 @@ input:focus {
 .cart_inner .table tbody tr.bottom_button td .cupon_text input.placeholder {
     font-size: 14px;
     color: #cccccc;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -6108,7 +6108,7 @@ input:focus {
 .cart_inner .table tbody tr.bottom_button td .cupon_text input:-moz-placeholder {
     font-size: 14px;
     color: #cccccc;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -6118,7 +6118,7 @@ input:focus {
 .cart_inner .table tbody tr.bottom_button td .cupon_text input::-moz-placeholder {
     font-size: 14px;
     color: #cccccc;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -6128,7 +6128,7 @@ input:focus {
 .cart_inner .table tbody tr.bottom_button td .cupon_text input::-webkit-input-placeholder {
     font-size: 14px;
     color: #cccccc;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -6201,7 +6201,7 @@ input:focus {
 /* line 1280, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .cart_inner .table tbody tr.shipping_area .shipping_box .list li a:before {
-    content: "";
+    content: '';
     height: 16px;
     width: 16px;
     border: 1px solid #cdcdcd;
@@ -6217,11 +6217,11 @@ input:focus {
 /* line 1293, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .cart_inner .table tbody tr.shipping_area .shipping_box .list li a:after {
-    content: "";
+    content: '';
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: #B08EAD;
+    background: #b08ead;
     display: inline-block;
     position: absolute;
     right: 3px;
@@ -6244,7 +6244,7 @@ input:focus {
     font-size: 14px;
     font-weight: normal;
     color: #2a2a2a;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -6385,7 +6385,7 @@ input:focus {
 .check_title h2 {
     font-size: 14px;
     font-weight: normal;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     background: #f4f4f4;
     line-height: 40px;
     padding-left: 30px;
@@ -6404,7 +6404,7 @@ input:focus {
 /* line 1443, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .check_title h2 a {
-    color: #B08EAD;
+    color: #b08ead;
     text-decoration: underline;
 }
 
@@ -6454,7 +6454,7 @@ input:focus {
     height: 40px;
     border-radius: 3px;
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6464,7 +6464,7 @@ input:focus {
 
 .returning_customer .contact_form .form-group input.placeholder {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6474,7 +6474,7 @@ input:focus {
 
 .returning_customer .contact_form .form-group input:-moz-placeholder {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6484,7 +6484,7 @@ input:focus {
 
 .returning_customer .contact_form .form-group input::-moz-placeholder {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6494,7 +6494,7 @@ input:focus {
 
 .returning_customer .contact_form .form-group input::-webkit-input-placeholder {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6529,7 +6529,7 @@ input:focus {
     display: block;
     margin-top: 20px;
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #795376;
     font-weight: normal;
 }
@@ -6579,7 +6579,7 @@ input:focus {
 /* line 1542, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .p_star .placeholder::after {
-    content: " *";
+    content: ' *';
     color: tomato;
 }
 
@@ -6639,7 +6639,7 @@ input:focus {
     padding: 0px 40px;
     color: #2a2a2a;
     text-transform: capitalize;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     border-radius: 50px;
 }
@@ -6648,9 +6648,9 @@ input:focus {
 /* line 1588, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .tp_btn:hover {
-    background: #B08EAD;
+    background: #b08ead;
     color: #fff;
-    border-color: #B08EAD;
+    border-color: #b08ead;
 }
 
 
@@ -6742,7 +6742,7 @@ input:focus {
 
 .billing_details .contact_form .form-group .country_select .list li {
     font-size: 14px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -6764,7 +6764,7 @@ input:focus {
 /* line 1650, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .billing_details .contact_form .form-group .creat_account a {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -6866,7 +6866,7 @@ input:focus {
 /* line 1738, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .order_box .payment_item h4:before {
-    content: "";
+    content: '';
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -6883,7 +6883,7 @@ input:focus {
 /* line 1752, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .order_box .payment_item h4:after {
-    content: "";
+    content: '';
     height: 4px;
     width: 4px;
     background: #fff;
@@ -6913,8 +6913,8 @@ input:focus {
 /* line 1776, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .order_box .payment_item.active h4:before {
-    background: #B08EAD;
-    border-color: #B08EAD;
+    background: #b08ead;
+    border-color: #b08ead;
 }
 
 
@@ -6937,7 +6937,7 @@ input:focus {
 /* line 1793, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .order_box .creat_account a {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -7007,7 +7007,7 @@ input:focus {
     border-radius: 0px;
     font-size: 14px;
     color: #795376;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -7017,7 +7017,7 @@ input:focus {
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input.placeholder {
     font-size: 14px;
     color: #795376;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -7027,7 +7027,7 @@ input:focus {
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input:-moz-placeholder {
     font-size: 14px;
     color: #795376;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -7037,7 +7037,7 @@ input:focus {
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-moz-placeholder {
     font-size: 14px;
     color: #795376;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -7047,7 +7047,7 @@ input:focus {
 .tracking_box_area .tracking_box_inner .tracking_form .form-group input::-webkit-input-placeholder {
     font-size: 14px;
     color: #795376;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
 }
 
@@ -7072,7 +7072,7 @@ input:focus {
 
 /* line 1866, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
-.radion_btn input[type="radio"] {
+.radion_btn input[type='radio'] {
     position: absolute;
     visibility: hidden;
 }
@@ -7108,7 +7108,7 @@ input:focus {
     z-index: 9;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     color: #2a2a2a;
     font-size: 13px;
@@ -7140,7 +7140,7 @@ input:focus {
 .radion_btn .check::before {
     display: block;
     position: absolute;
-    content: "";
+    content: '';
     border-radius: 100%;
     height: 4px;
     width: 4px;
@@ -7154,22 +7154,22 @@ input:focus {
 
 /* line 1930, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
-.radion_btn input[type="radio"]:checked~.check {
-    border: 1px solid #B08EAD;
-    background: #B08EAD;
+.radion_btn input[type='radio']:checked~.check {
+    border: 1px solid #b08ead;
+    background: #b08ead;
 }
 
 
 /* line 1935, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
-.radion_btn input[type="radio"]:checked~.check::before {
+.radion_btn input[type='radio']:checked~.check::before {
     background: #fff;
 }
 
 
 /* line 1939, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
-.radion_btn input[type="radio"]:checked~label {
+.radion_btn input[type='radio']:checked~label {
     color: #000;
 }
 
@@ -7216,9 +7216,9 @@ input:focus {
 /* line 1960, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .login_part .login_part_text {
-    background-image: -moz-linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
-    background-image: -webkit-linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
-    background-image: linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
+    background-image: -moz-linear-gradient( 90deg, #b08ead 0%, #4b3049 64%, #b08ead 100%);
+    background-image: -webkit-linear-gradient( 90deg, #b08ead 0%, #4b3049 64%, #b08ead 100%);
+    background-image: linear-gradient( 90deg, #b08ead 0%, #4b3049 64%, #b08ead 100%);
     background-size: 200% auto;
 }
 
@@ -7257,7 +7257,7 @@ input:focus {
 
 .login_part .login_part_text .btn_3:hover {
     background-color: #fff;
-    color: #B08EAD !important;
+    color: #b08ead !important;
 }
 
 @media (max-width: 991px) {
@@ -7433,7 +7433,7 @@ input:focus {
 /* line 2102, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .s_product_text .like_us:hover {
-    background-color: #B08EAD;
+    background-color: #b08ead;
     color: #fff;
 }
 
@@ -7448,7 +7448,7 @@ input:focus {
 /* line 2109, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .s_product_text .btn_3:hover {
-    color: #B08EAD;
+    color: #b08ead;
     background-color: #fff;
     box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
     border: 1px solid #fff;
@@ -7503,7 +7503,7 @@ input:focus {
 /* line 2151, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .card_area .social_icon a:hover {
-    background-color: #B08EAD;
+    background-color: #b08ead;
 }
 
 
@@ -7532,7 +7532,7 @@ input:focus {
 /* line 2168, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 
 .cart_area .btn_1:hover {
-    border: 1px solid #B08EAD !important;
+    border: 1px solid #b08ead !important;
 }
 
 
@@ -7580,7 +7580,7 @@ input:focus {
     font-size: 16px;
     color: #000;
     text-transform: capitalize;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-left: 35px;
     display: inline-block;
     cursor: pointer;
@@ -7692,12 +7692,12 @@ input:focus {
 
 .new_arrival .single_arrivel_item:after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     opacity: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -7799,7 +7799,7 @@ input:focus {
 /* line 144, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_new_arrival.scss */
 
 .new_arrival .single_arrivel_item .hover_text .social_icon a:hover {
-    background-color: #B08EAD;
+    background-color: #b08ead;
     color: #fff;
 }
 
@@ -7807,7 +7807,7 @@ input:focus {
 /* line 152, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_new_arrival.scss */
 
 .new_arrival .single_arrivel_item:hover:after {
-    opacity: .7;
+    opacity: 0.7;
     visibility: visible;
 }
 
@@ -7840,7 +7840,7 @@ input:focus {
 .new_arrival .active {
     position: relative;
     z-index: 1;
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -7848,12 +7848,12 @@ input:focus {
 
 .new_arrival .active:after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #B08EAD;
+    background-color: #b08ead;
 }
 
 
@@ -7959,14 +7959,14 @@ input:focus {
 
 .instagram_photo .instagram_photo_iner .single_instgram_photo:after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
@@ -7998,7 +7998,7 @@ input:focus {
 
 .instagram_photo .instagram_photo_iner .single_instgram_photo:hover:after {
     visibility: visible;
-    opacity: .7;
+    opacity: 0.7;
 }
 
 
@@ -8032,7 +8032,7 @@ input:focus {
 /* line 6, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_confirmation_part.scss */
 
 .confirmation_part .confirmation_tittle span {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -8174,7 +8174,7 @@ sup,
 sub,
 u,
 del {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -8282,7 +8282,7 @@ h6 {
     outline: none;
     line-height: 40px;
     padding: 0 30px;
-    font-size: .8em;
+    font-size: 0.8em;
     text-align: center;
     text-decoration: none;
     font-weight: 500;
@@ -8401,7 +8401,7 @@ h6 {
 
 .genric-btn.primary {
     color: #fff;
-    background: #B08EAD;
+    background: #b08ead;
     border: 1px solid transparent;
 }
 
@@ -8409,8 +8409,8 @@ h6 {
 /* line 222, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .genric-btn.primary:hover {
-    color: #B08EAD;
-    border: 1px solid #B08EAD;
+    color: #b08ead;
+    border: 1px solid #b08ead;
     background: #fff;
 }
 
@@ -8418,8 +8418,8 @@ h6 {
 /* line 228, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .genric-btn.primary-border {
-    color: #B08EAD;
-    border: 1px solid #B08EAD;
+    color: #b08ead;
+    border: 1px solid #b08ead;
     background: #fff;
 }
 
@@ -8428,7 +8428,7 @@ h6 {
 
 .genric-btn.primary-border:hover {
     color: #fff;
-    background: #B08EAD;
+    background: #b08ead;
     border: 1px solid transparent;
 }
 
@@ -8630,7 +8630,7 @@ h6 {
 .generic-blockquote {
     padding: 30px 50px 30px 30px;
     background: #f9f9ff;
-    border-left: 2px solid #B08EAD;
+    border-left: 2px solid #b08ead;
 }
 
 
@@ -8831,11 +8831,11 @@ h6 {
 /* line 460, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .unordered-list li:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 14px;
     height: 14px;
-    border: 3px solid #B08EAD;
+    border: 3px solid #b08ead;
     background: #fff;
     top: 4px;
     left: 0;
@@ -8854,7 +8854,7 @@ h6 {
 
 .ordered-list li {
     list-style-type: decimal-leading-zero;
-    color: #B08EAD;
+    color: #b08ead;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -8873,7 +8873,7 @@ h6 {
 .ordered-list-alpha li {
     margin-left: 30px;
     list-style-type: lower-alpha;
-    color: #B08EAD;
+    color: #b08ead;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -8892,7 +8892,7 @@ h6 {
 .ordered-list-roman li {
     margin-left: 30px;
     list-style-type: lower-roman;
-    color: #B08EAD;
+    color: #b08ead;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -8997,7 +8997,7 @@ h6 {
 
 .single-input-primary:focus {
     outline: none;
-    border: 1px solid #B08EAD;
+    border: 1px solid #b08ead;
 }
 
 
@@ -9079,7 +9079,7 @@ h6 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #B08EAD;
+    background: #b08ead;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -9138,7 +9138,7 @@ h6 {
 /* line 664, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .primary-switch input+label:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -9159,7 +9159,7 @@ h6 {
 /* line 678, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .primary-switch input+label:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 1px;
     left: 1px;
@@ -9186,7 +9186,7 @@ h6 {
 /* line 697, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .primary-switch input:checked+label:before {
-    background: #B08EAD;
+    background: #b08ead;
 }
 
 
@@ -9232,7 +9232,7 @@ h6 {
 /* line 729, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .confirm-switch input+label:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -9253,7 +9253,7 @@ h6 {
 /* line 743, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .confirm-switch input+label:after {
-    content: "";
+    content: '';
     position: absolute;
     top: 1px;
     left: 1px;
@@ -9649,7 +9649,7 @@ h6 {
 /* line 1023, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .default-select .nice-select .list .option.selected {
-    color: #B08EAD;
+    color: #b08ead;
     background: transparent;
 }
 
@@ -9657,7 +9657,7 @@ h6 {
 /* line 1027, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .default-select .nice-select .list .option:hover {
-    color: #B08EAD;
+    color: #b08ead;
     background: transparent;
 }
 
@@ -9728,7 +9728,7 @@ h6 {
 /* line 1068, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .form-select .nice-select .list .option.selected {
-    color: #B08EAD;
+    color: #b08ead;
     background: transparent;
 }
 
@@ -9736,7 +9736,7 @@ h6 {
 /* line 1072, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_elements.scss */
 
 .form-select .nice-select .list .option:hover {
-    color: #B08EAD;
+    color: #b08ead;
     background: transparent;
 }
 
@@ -9945,12 +9945,12 @@ h6 {
 
 .blog_part .single-home-blog .card .dot:after {
     position: absolute;
-    content: "";
+    content: '';
     width: 10px;
     height: 10px;
     top: 5px;
     left: 0;
-    background-color: #B08EAD;
+    background-color: #b08ead;
     border-radius: 50%;
 }
 
@@ -10045,7 +10045,7 @@ h6 {
 .blog_part .single-home-blog .card h5:hover {
     -webkit-transition: 0.8s;
     transition: 0.8s;
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -10141,7 +10141,7 @@ h6 {
 /* line 23, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_contact.scss */
 
 .contact-info .media-body h3 a:hover {
-    color: #B08EAD;
+    color: #b08ead;
 }
 
 
@@ -10184,8 +10184,8 @@ h6 {
 /* line 52, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_contact.scss */
 
 .form-contact .form-group .button-contactForm {
-    color: #B08EAD !important;
-    border: 1px solid #B08EAD;
+    color: #b08ead !important;
+    border: 1px solid #b08ead;
 }
 
 
@@ -10233,15 +10233,15 @@ h6 {
 /* line 81, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_contact.scss */
 
 .form-contact .form-group .btn_1:hover {
-    border: 1px solid #B08EAD;
-    color: #B08EAD !important;
+    border: 1px solid #b08ead;
+    color: #b08ead !important;
 }
 
 
 /* line 84, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_contact.scss */
 
 .form-contact .form-group .btn_1:hover i {
-    color: #B08EAD;
+    color: #b08ead;
     color: #fff !important;
 }
 
@@ -10388,7 +10388,7 @@ h6 {
 
 .about_us .about_us_content h5 {
     font-size: 20px;
-    color: #B08EAD;
+    color: #b08ead;
     font-weight: 400;
 }
 
@@ -10405,7 +10405,7 @@ h6 {
 .about_us .about_us_content h3 {
     font-size: 24px;
     line-height: 1.5;
-    color: #4B3049;
+    color: #4b3049;
     margin: 5px 0 60px;
     font-weight: 400;
 }
@@ -10449,7 +10449,7 @@ h6 {
 
 .about_us .about_video_icon:after {
     position: absolute;
-    content: "";
+    content: '';
     width: 14px;
     height: 18px;
     background-color: #fff;
@@ -10478,7 +10478,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #B08EAD;
+    background-color: #b08ead;
 }
 
 
@@ -10572,7 +10572,7 @@ h6 {
 
 .footer_part .footer_iner .footer_menu_item a {
     display: inline-block;
-    color: #4B3049;
+    color: #4b3049;
     font-size: 16px;
     padding: 0 17px;
 }
@@ -10595,7 +10595,7 @@ h6 {
 /* line 42, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 
 .footer_part .footer_iner .footer_menu_item a:hover {
-    color: #E4D3DF;
+    color: #e4d3df;
 }
 
 
@@ -10620,7 +10620,7 @@ h6 {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: #4B3049;
+    background-color: #4b3049;
     line-height: 45px;
     color: rgb(255, 255, 255);
     display: inline-block;
@@ -10631,14 +10631,14 @@ h6 {
 /* line 63, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 
 .footer_part .social_icon a:hover {
-    background-color: #E4D3DF;
+    background-color: #e4d3df;
 }
 
 
 /* line 69, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 
 .footer_part .copyright_part {
-    background-color: #F4EDF2;
+    background-color: #f4edf2;
     padding: 30px 0px;
 }
 
@@ -10662,7 +10662,7 @@ h6 {
 /* line 80, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 
 .footer_part .copyright_part .copyright_text p a {
-    color: #4B3049;
+    color: #4b3049;
 }
 
 @media (max-width: 991px) {
@@ -10676,7 +10676,7 @@ h6 {
 /* line 89, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_footer.scss */
 
 .footer_part .copyright_part .copyright_link a {
-    color: #4B3049;
+    color: #4b3049;
     margin-left: 40px;
 }
 
@@ -10688,5 +10688,558 @@ h6 {
     }
 }
 
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+}
 
-/*# sourceMappingURL=../css/style.map */
+th,
+td {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px;
+    text-align: left;
+    width: 33.3333%;
+}
+
+tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+}
+
+thead th {
+    background: #88CCF1;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: #FFF;
+    display: inline-block;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 18px 10px 18px;
+    text-transform: uppercase;
+}
+
+.active {
+    color: #88CCF1;
+}
+
+.search {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    color: #AAA;
+    padding: 20px;
+    margin: 50px auto 0px auto;
+    width: 77%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+    background: url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#feedback-page {
+    text-align: center;
+}
+
+#form-main {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -260px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+    color: #30aed6;
+    border: #30aed6 solid 3px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+#button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #0493bd;
+}
+
+.submit:hover {
+    color: #3498db;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+body {
+    color: #333;
+    font-family: "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    background: #fff;
+    margin: 0;
+    paddign: 0;
+}
+
+
+/* Style for text
+* --------------------------------------- */
+
+p {
+    color: #333;
+}
+
+
+/* Common styles
+* --------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.box {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+
+/*screen resolutions lower than 620px*/
+
+@media all and (max-width: 1180px) {
+    .wrap {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+#section h2 {
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+}
+
+#section p a {
+    color: #00B16A;
+    text-decoration: none;
+}
+
+#section .wrap {
+    text-align: center;
+    width: 100%;
+}
+
+#section .box {
+    text-align: center;
+    margin: 5% 0 0 0;
+    width: 100%;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-form .input-block {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #00b16a;
+    margin: 0;
+    position: relative;
+    margin-bottom: 20px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .input-block.focus {}
+
+.contact-form .input-block.textarea {
+    height: auto;
+}
+
+.contact-form .input-block.textarea .form-control {
+    height: auto;
+    resize: none;
+}
+
+.contact-form .input-block label {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    z-index: 1;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.contact-form .input-block .form-control {
+    background-color: transparent;
+    margin: 0;
+    outline: none;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    padding: 30px 10px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-form .input-block .form-control:focus label {
+    top: 0;
+}
+
+.contact-form .square-button {
+    background-color: #00B16A;
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contact-form .square-button:hover,
+.contact-form .square-button:focus {
+    background-color: #66CC99;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+@media (min-width: 768px) {
+    .contact-wrap {
+        margin: auto;
+    }
+}
+
+@media (max-width: 868px) {
+    .contact-form {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+
+/*----page styles---*/
+
+.contact-wrap {
+    padding: 15px;
+    background: #ecf0f1;
+}
+
+.contact-wrap h1 {
+    background-color: white;
+    color: #ff7c62;
+    padding: 40px;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-wrap h1 small {
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ff7c62;
+}
+
+iframe {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.output {
+    background: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2EEE9;
+    font: normal 13px/1.5 Georgia, Serif;
+    color: #333;
+}
+
+.wrapper {
+    width: 705px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.items {
+    display: block;
+    margin: 20px 0;
+}
+
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 205px;
+    padding: 10px;
+    height: 290px;
+}
+
+.item img {
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+
+button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    float: right;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    float: right;
+}
+
+.shopping-cart {
+    display: inline-block;
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
