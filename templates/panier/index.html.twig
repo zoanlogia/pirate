@@ -23,8 +23,13 @@
         <h1>Votre panier</h1>
     </div>
     
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 53446962219251c4d09ffc2c3f9461c51b362e38
     <!-- si le panier n'est pas vide (verification de la taille de items)  -->
-    {% if items | length > 0 %}
+    
+    {% if items| length > 0 %}
         <table class="table">
             <thead>
                 <tr>
@@ -39,6 +44,7 @@
             </thead>
             <tbody>
                 {% for item in items %}
+<<<<<<< HEAD
                     <tr>
                         <td>{{ item.produits.nom }}</td>
                         <td> <img class="imgpanier" src="{{asset('img/')}}{{item.produits.image}}"/> </td>
@@ -58,6 +64,26 @@
                             </a>
                         </td>
                     </tr>
+=======
+                    {% if  item.produits is not null %}
+                        <tr>
+                            <td>{{ item.produits.nom }}</td>
+                            <td>{{ item.produits.image }}</td>
+                            <td>{{ item.produits.description }}</td>
+                            <td>{{ item.produits.prix }}</td>
+                            <td class"test">{{ item.quantity }}</td>
+                            <td>{{ item.produits.prix * item.quantity }}</td>
+                            <td>
+                                <a href="{{ path('panier_subtract', {'id': item.produits.id}) }}" class="btn">Enlever un article</a>
+                            </td>
+                            <td>
+                                <a href="{{ path('panier_remove', {'id': item.produits.id}) }}" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endif %}
+>>>>>>> 53446962219251c4d09ffc2c3f9461c51b362e38
                 {% endfor %}
             </tbody>
             <tfoot>
@@ -68,9 +94,13 @@
                 </tr>
             </tfoot>
         </table>
+        <div>
+            <a href="{{ path('command') }}" class="btn">Commandez</a>
+        </div>
     {% else %}
         <p>Votre panier est vide</p>
     {% endif %}
 
 {% endblock %}
+
 </html>
