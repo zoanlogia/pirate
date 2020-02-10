@@ -11,27 +11,19 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  * @ORM\Table(name="fos_user")
- * @uniqueEntity(
- * fields ={"username"}
- * message="le user existe)
  */
-class Fos_user
+class User extends BaseUser
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
+     * @ORM\Id
      * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     
 
     /**
-<<<<<<< HEAD
-     * @ORM\Column(type="string", length=255)
-     */
-    private $username;
-=======
      * @ORM\OneToMany(targetEntity="App\Entity\PostLike", mappedBy="user")
      */
     private $likes;
@@ -122,5 +114,4 @@ class Fos_user
 
     
 
->>>>>>> 53446962219251c4d09ffc2c3f9461c51b362e38
 }

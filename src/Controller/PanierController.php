@@ -52,6 +52,7 @@ class PanierController extends AbstractController
             // envoie du calcul du prix du panier au twig
             'totalPrice' => $totalPrice
         ]);
+        }
     }
 
     /**

@@ -13,11 +13,7 @@ class AppFixtures extends Fixture
         $p1 = new Produits();
         $p1->setType("huiles essencielles")
            ->setNom("fruitée")
-<<<<<<< HEAD
-           ->setImage("{{ asset ('img/creme-1.jpeg')}}")
-=======
-           ->setImage("oil-5.jpeg")
->>>>>>> 53446962219251c4d09ffc2c3f9461c51b362e38
+           ->setImage("{{ asset ('creme-1.jpeg')}}")
            ->setDescription("lorem...")
            ->setPrix(10);
         $manager->persist($p1);
