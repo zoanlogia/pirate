@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Form;
-
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -13,18 +11,8 @@ class InscriptionType extends AbstractType
     {
         $builder
             ->add('username')
-            ->add('usernameCanonical')
-            ->add('email')
-            ->add('emailCanonical')
-            ->add('enabled')
-            ->add('salt')
             ->add('password')
-            ->add('lastLogin')
-            ->add('confirmationToken')
-            ->add('passwordRequestedAt')
-            ->add('roles')
-            ->add('adresse')
-            ->add('ville')
+            ->add('verifPassword')
         ;
     }
 

@@ -1,0 +1,22 @@
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+{% block title %} Inscription {% endblock %}
+
+{% block body %}
+  
+   <h2>Hello</h2>
+   <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+   <input type="submit" class="btn btn-primary" value="valider">
+
+{% endblock %}

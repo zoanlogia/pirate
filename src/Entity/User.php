@@ -9,29 +9,21 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  * @ORM\Table(name="fos_user")
+ * @uniqueEntity(
+ * fields ={"username"}
+ * message="le user existe)
  */
-class User extends BaseUser
+class Fos_user
 {
     /**
-     * @ORM\Id
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;
+    private $id;
 
     /**
-     * @ORM\Column(type="string", length=15)
+     * @ORM\Column(type="string", length=255)
      */
-    private $adresse;
-
-    /**
-     * @ORM\Column(type="string", length=15)
-     */
-    private $ville;
-
-    public function __construct()
-    {
-        parent::__construct();
-        // your own logic
-    }
+    private $username;
 }
