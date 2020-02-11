@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="{{ asset ('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset ('css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset ('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/stylesbase.css') }}">
     
 </head>
 {% endblock %} {% block header %}
-
+{% block nav %}
 <body>
     <header class="main_menu home_menu">
         <div class="container">
@@ -33,22 +34,42 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ path ('pirate')}}">Accueil</a>
+                                    <a class="nav-link {% if mainNavHome is defined %}active{% endif %}" href="{{ path ('pirate')}}">Accueil</a>
                                 </li>
-                                <li class="nav-item">
+                                {% if is_granted('ROLE_USER') %}
+                                 <a class="nav-link" href="{{path('app_member_index')}}">Espace membre</a>
+                                {% endif %}
+                                <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('pirate')}}">A propos</a>
                                 </li>
-                                <li class="nav-item">
+                                
+                                {% if is_granted('ROLE_ADMIN') %}
+                                <li class="nav-item {% if mainNavAdmin is defined %}active{% endif %}">
+                            <a class="nav-link" href="{{path('app_admin_homepage_index')}}">Espace admin</a>
+                        </li>
+                                {% endif %}
+                                {% if is_granted('ROLE_USER') %}
+                                <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('produits')}}">Produits </a>
                                 </li>
+                                 
+                                {% endif %}
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="{{ path ('pirate')}}" id="navbarDropdown_3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                                    {% if is_granted('ROLE_USER') %}
+                                    <a class="nav-link" href="{{path('logout')}}">Déconnexion</a>
                                         <a class="dropdown-item" href="{{ path ('pirate')}}">
+                                        {% else %}
+                                            
+                                        <a class="nav-link" href="{{path('app_registration_register')}}">Inscription</a>
                                             Se connecter
                                         </a>
+                                        {% endif %}
+                                        
                                         <a class="dropdown-item" href="{{ path ('panier_index')}}">Mon panier</a>
                                         <a class="dropdown-item" href="{{ path ('command')}}">Confirmation</a>
                                     </div>
@@ -65,6 +86,35 @@
                             </a>
                         </div>
                     </nav>
+                    {% endblock %}
+                    
+        {% block flash %}
+            {% for flash_message in app.session.flashbag.get('success') %}
+                <div class="container alert alert-success" role="alert">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+            {% for flash_message in app.session.flashbag.get('info') %}
+                <div class="container alert alert-info" role="alert">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+            {% for flash_message in app.session.flashbag.get('warning') %}
+                <div class="container alert alert-warning" role="alert">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+            {% for flash_message in app.session.flashbag.get('danger') %}
+                <div class="container alert alert-danger" role="alert">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+        {% endblock %}
+
+        <div class="container bck1 padded">
+            {% block body %}
+            {% endblock %}
+        </div>
                 </div>
             </div>
         </div>
