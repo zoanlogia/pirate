@@ -102,6 +102,18 @@ input:focus {
     }
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #47c48b;
+    border-color: #47c48b;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #47c48b;
+    border-color: #47c48b;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* line 39, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
     .single_padding_top {
@@ -292,7 +304,7 @@ h5 {
 /* line 161, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_common.scss */
 
 img {
-    max-width: 100%;
+    max-width: 35%;
 }
 
 
@@ -632,7 +644,7 @@ ul {
     font-weight: 500;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -2700,7 +2712,7 @@ ul {
 .main_menu .main-menu-item ul li .nav-link {
     color: #4b3049;
     font-size: 16px;
-    padding: 35px 21px;
+    padding: 0;
     font-family: 'Rubik', sans-serif;
     text-transform: capitalize;
     line-height: 16px;
@@ -10252,7 +10264,7 @@ h6 {
     border: 1px solid #f0e9ff;
     border-radius: 5px;
     height: 48px;
-    padding-left: 18px;
+    padding-left: 100px;
     font-size: 13px;
     background: transparent;
 }
@@ -10714,7 +10726,7 @@ tr {
 }
 
 thead th {
-    background: #88CCF1;
+    background: #47c48b;
     color: #FFF;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -11242,4 +11254,8 @@ span {
     width: 24px;
     height: 24px;
     margin: 0 10px 0 0;
+}
+
+.header {
+    background: white;
 }

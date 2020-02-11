@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+<div id="section">
+
+				<section class="contact-wrap">
+				  <form action="{{ path ('send')}}" class="contact-form" method="post">
+					<div class="col-sm-6">
+					  <div class="input-block">
+						<label for="">Prénom</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+					<div class="col-sm-6">
+					  <div class="input-block">
+						<label for="">Nom</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <div class="input-block">
+						<label for="">Email</label>
+						<input type="text" class="form-control">
+					  </div>
+					</div>
+				
+					<div class="col-sm-12">
+					  <div class="input-block textarea">
+						<label for="">Votre message </label>
+						<textarea rows="3" type="text" class="form-control"></textarea>
+					  </div>
+					</div>
+					<div class="col-sm-12">
+					  <button class="square-button">Envoyer</button>
+					</div>
+				  </form>
+				</section>
+
+</div>
+{% endblock %}
