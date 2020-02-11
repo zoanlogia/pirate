@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
+
   <div>
     <h1>
       Votre panier
@@ -9,6 +10,7 @@
 
   {% if (items|length) > 0 %}
     <table class="table">
+    
       <thead>
         <tr>
           <th>
@@ -55,15 +57,7 @@
               {{ item.produits.prix * item.quantity }}
             </td>
             <td>
-              <a href="{{
-                path(
-                  'panier_subtract',
-                  {
-                    id: item.produits.id
-                  }
-                )
-                }}"
-                class="btn">
+              <a href="{{ path('panier_subtract',{id: item.produits.id})}}" class="btn">
                 <img src="{{ asset('img/moins.png') }}" />
               </a>
 

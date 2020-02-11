@@ -1,88 +1,46 @@
-{% extends "base.html.twig" %}
-{% block main %}
 
-<section class="cart_area section_padding">
-    <div class="container">
-        <div class="cart_inner">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        {% if (items|length) > 0 %}
-                            <tr>
-                                <th scope="col">Produits</th>
-                                <th scope="col">Prix</th>
-                                <th scope="col">Quantité</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                    </thead>
-                    <tbody>
-                        {% for item in items %}
-                            <tr>
-                                <td>
-                                {{ item.produits.nom }}
-                                </td>
-                                <td>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="{{ asset('img/') }}{{ item.produits.image }}" />
-                                        </div>
-                                            <div class="media-body">
-                                                <p>{{ item.produits.description }}</p>
-                                            </div>
-                                        </div>
-                                            <div class="product_count">
-                                                <span class="input-number-decrement">
-                                                    <i class="ti-minus">
-                                                        <a href="{{ path('panier_remove', {id: item.produits.id})}}"></a>
-                                                        </i>
-                                                </span>
-                                                <input class="input-number" type="text" value="1" min="0" max="10">
-                                                <span class="input-number-increment">
-                                                    <i class="ti-plus">
-                                                    <a href="{{ path('panier_add',{id: item.produits.id})}}"></a>
-                                                    </i>
-                                                </span>
-                                            </div>
-                                </td>
-                            <td>
-                                <h5>{{ item.produits.prix }}</h5>
-                            </td>
 
-                        </tr>
-                        <tr class="bottom_button">
-                            <td>
-                                <a class="btn_1" href="#">Update Cart</a>
-                            </td>
-                            <td>
-                            {% else %}
-                            </td>
-                            
-                            <td>
-                                <div class="cupon_text float-right">
-                                    <a class="btn_1" href="#">Close Coupon</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            {% endfor %}
-                            <td>
-                                <h5>Total</h5>
-                            </td>
-                            <td>
-                                <h5>{{ totalPrice }}</h5>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-                <div class="checkout_btn_inner float-right">
-                    <a class="btn_1" href="#">Continuez vos achats</a>
-                    <a class="btn_1 checkout_btn_1" href="{{ path('command') }}">Commandez</a>
-                </div>
-                
-            </div>
-            {% endif %}
-        </div>
-</section>
+<body>
+  <div id="w">
+    <header id="title">
+      <h1>Votre panier</h1>
+    </header>
+    <div id="page">
+      <table id="cart">
+        <thead>
+          <tr>
+            <th class="first">Photo</th>
+            <th class="second">Quantité</th>
+            <th class="third">Produit</th>
+            <th class="fourth">Total</th>
+            <th class="fifth">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr class="productitm">
+            
+            <td><img src="{{ asset('img/') }}{{ item.produits.image }}"></td>
+            <td><input href="{{ path('panier_subtract',{id: item.produits.id})}}" type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td>{{ item.produits.nom }}</td>
+            td
+            <td>{{ item.produits.prix }}</td>
+            <td><span class="remove"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+          </tr>
+          
+          <tr class="totalprice">
+            <td class="light">Total:</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><span class="thick">{{ totalPrice }}</span></td>
+          </tr>
+          
+         
+          <tr class="checkoutrow">
+            <td colspan="5" class="checkout"><button id="submitbtn">Payer maintenant</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
 
-{% endblock %}
