@@ -46,6 +46,42 @@ class Command
      */
     private $created_at;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $numero_command;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $prenom_user;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $nom_user;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $adresse;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $ville;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $code;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $totalPrice;
+
+
     public function __construct(){
         $this->created_at = new \Datetime;
     }
@@ -123,6 +159,90 @@ class Command
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
         $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    public function getNumeroCommand(): ?int
+    {
+        return $this->numero_command;
+    }
+
+    public function setNumeroCommand(int $numero_command): self
+    {
+        $this->numero_command = $numero_command;
+
+        return $this;
+    }
+
+    public function getPrenomUser(): ?string
+    {
+        return $this->prenom_user;
+    }
+
+    public function setPrenomUser(string $prenom_user): self
+    {
+        $this->prenom_user = $prenom_user;
+
+        return $this;
+    }
+
+    public function getNomUser(): ?string
+    {
+        return $this->nom_user;
+    }
+
+    public function setNomUser(string $nom_user): self
+    {
+        $this->nom_user = $nom_user;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?string
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(string $adresse): self
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    public function getVille(): ?string
+    {
+        return $this->ville;
+    }
+
+    public function setVille(string $ville): self
+    {
+        $this->ville = $ville;
+
+        return $this;
+    }
+
+    public function getCode(): ?int
+    {
+        return $this->code;
+    }
+
+    public function setCode(int $code): self
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    public function getTotalPrice(): ?int
+    {
+        return $this->totalPrice;
+    }
+
+    public function setTotalPrice(int $totalPrice): self
+    {
+        $this->totalPrice = $totalPrice;
 
         return $this;
     }

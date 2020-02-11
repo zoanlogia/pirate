@@ -44,7 +44,7 @@
                             <td>{{ item.produits.image }}</td>
                             <td>{{ item.produits.description }}</td>
                             <td>{{ item.produits.prix }}</td>
-                            <td class"test">{{ item.quantity }}</td>
+                            <td>{{ item.quantity }}</td>
                             <td>{{ item.produits.prix * item.quantity }}</td>
                             <td>
                                 <a href="{{ path('panier_subtract', {'id': item.produits.id}) }}" class="btn">Enlever un article</a>
