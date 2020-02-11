@@ -1,114 +1,48 @@
 {% extends 'base.html.twig' %}
-
 {% block main %}
-
-  <div>
-    <h1>
-      Votre panier
-    </h1>
-  </div>
-
-  {% if (items|length) > 0 %}
-    <table class="table">
-    
-      <thead>
-        <tr>
-          <th>
-            Produit
-          </th>
-          <th>
-            Image
-          </th>
-          <th>
-            Déscription
-          </th>
-          <th>
-            Prix
-          </th>
-          <th>
-            Quantité
-          </th>
-          <th>
-            Total
-          </th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        {% for item in items %}
+<body>
+  <div id="w">
+    <header id="title">
+      <h1>Votre panier</h1>
+    </header>
+    <div id="page">
+      <table id="cart">
+        <thead>
           <tr>
-            <td>
-              {{ item.produits.nom }}
-            </td>
-            <td>
-              <img class="imgpanier"
-                src="{{ asset('img/') }}{{ item.produits.image }}" />
-            </td>
-            <td>
-              {{ item.produits.description }}
-            </td>
-            <td>
-              {{ item.produits.prix }}
-            </td>
-            <td>
-              {{ item.quantity }}
-            </td>
-            <td>
-              {{ item.produits.prix * item.quantity }}
-            </td>
-            <td>
-              <a href="{{ path('panier_subtract',{id: item.produits.id})}}" class="btn">
-                <img src="{{ asset('img/moins.png') }}" />
-              </a>
-
-              <a href="{{
-                path(
-                  'panier_add',
-                  {
-                    id: item.produits.id
-                  }
-                )
-                }}"
-                class="btn">
-                <img src="{{ asset('img/plus.png') }}" />
-              </a>
-            </td>
-            
-            <td>
-              <a href="{{
-                path(
-                  'panier_remove',
-                  {
-                    id: item.produits.id
-                  }
-                )
-                }}"
-                class="btn btn-danger btn-sm">
-                <i class="fas fa-trash"></i>
-              </a>
-            </td>
-            
+            <th class="first">Photo</th>
+            <th class="second">Quantité</th>
+            <th class="third">Produit</th>
+            <th class="fourth">Total</th>
+            <th class="fifth">&nbsp;</th>
           </tr>
-        {% endfor %}
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="5">
-            Total :
-          </td>
-          <td>
-            {{ totalPrice }}
-          </td>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr class="productitm">
+            
+            <td><img src="{{ asset('img/') }}{{ item.produits.image }}"></td>
+            <td><input type="number" value="{{ item.quantity }}" min="0" max="99" class="qtyinput"></td>
+            <td>{{ item.produits.nom }}</td>
+            <td>{{ item.produits.prix }}</td>
+            <td><span class="remove" href="{{ path('panier_remove',{id: item.produits.id})}}" alt="X"></span></td>
+          </tr>
+          {% endfor %}
+          <tr class="totalprice">
+            <td class="light">Total:</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><span class="thick">{{ totalPrice }}</span></td>
+          </tr>
           
-        </tr>
-      </tfoot>
-    </table>
-    <div>
-      <a href="{{ path('command') }}" class="btn">Commandez</a>
+         
+          <tr class="checkoutrow">
+            <td colspan="5" class="checkout"><button id="submitbtn">Payer maintenant</button></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  {% else %}
-    <p>
-      Votre panier est vide
+  </div>
+    <p> 
     </p>
-  {% endif %}
+</body>
 {% endblock %}
+
