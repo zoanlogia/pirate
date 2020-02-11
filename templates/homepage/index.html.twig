@@ -2,7 +2,8 @@
 
 {% block main %}
 
-    {% if error %}
+    {% if error is defined %}
+        {% if error %}
         <div class="alert alert-danger">
             <ul class="list-unstyled mb-0">
                 <li><span class="initialism form-error-icon badge badge-danger">Error</span>
@@ -11,5 +12,6 @@
             </ul>
         </div>
     {% endif %}
-    {{form(form)}}
+        {% endif %}
+    {{ form(form) }}
 {% endblock %}

@@ -36,18 +36,21 @@
                                 <li class="nav-item">
                                     <a class="nav-link {% if mainNavHome is defined %}active{% endif %}" href="{{ path ('pirate')}}">Accueil</a>
                                 </li>
+                                <li class="nav-item dropdown">
+                                {% if is_granted('ROLE_ADMIN') %}
+                                <li class="nav-item {% if mainNavAdmin is defined %}active{% endif %}">
+                            <a class="nav-link" href="{{path('pirate')}}">Espace admin</a>
+                             </li>
+                                {% endif %}
                                 {% if is_granted('ROLE_USER') %}
-                                 <a class="nav-link" href="{{path('app_member_index')}}">Espace membre</a>
+                                <li class="nav-item {% if mainNavMember is defined %}active{% endif %}">
+                                 <a class="nav-link" href="{{path('pirate')}}">Espace membre</a>
+                                </li>
                                 {% endif %}
                                 <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('pirate')}}">A propos</a>
                                 </li>
                                 
-                                {% if is_granted('ROLE_ADMIN') %}
-                                <li class="nav-item {% if mainNavAdmin is defined %}active{% endif %}">
-                            <a class="nav-link" href="{{path('app_admin_homepage_index')}}">Espace admin</a>
-                        </li>
-                                {% endif %}
                                 {% if is_granted('ROLE_USER') %}
                                 <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('produits')}}">Produits </a>
@@ -60,14 +63,17 @@
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                    {% if is_granted('ROLE_USER') %}
-                                    <a class="nav-link" href="{{path('logout')}}">Déconnexion</a>
+                                    
+                                    
                                         <a class="dropdown-item" href="{{ path ('pirate')}}">
+                                        {% if is_granted('ROLE_USER') %}
+
+                                        <a class="nav-link" href="{{path('logout')}}">Déconnexion</a>
                                         {% else %}
                                             
                                         <a class="nav-link" href="{{path('app_registration_register')}}">Inscription</a>
-                                            Se connecter
-                                        </a>
+                                        <a class="nav-link" href="{{path('login')}}">Connexion</a>
+                                            
                                         {% endif %}
                                         
                                         <a class="dropdown-item" href="{{ path ('panier_index')}}">Mon panier</a>

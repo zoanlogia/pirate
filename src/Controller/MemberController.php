@@ -11,7 +11,7 @@ class MemberController extends AbstractController {
      * @Route("/")
      */
     public function index() {
-        return $this->render('member/index.html.twig', ['mainNavMember'=>true, 'title'=>'Espace Membre']);
+        return $this->render('member/base.html.twig', ['mainNavMember'=>true, 'title'=>'Espace Membre']);
     }
 
 }
