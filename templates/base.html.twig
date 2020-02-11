@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset ('css/slick.css')}}">
     <!-- style CSS -->
     <link rel="stylesheet" href="{{ asset ('css/style.css')}}">
+    
 </head>
 
 <body>
@@ -301,7 +302,6 @@
                             <h5>- Micky Mouse</h5>
                         </div>
                         <div class="single_client_review">
-                            <div class="client_img">
                                 <img src="{{ asset ('img/client_1.png')}}" alt="#">
                             </div>
                             <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
@@ -387,6 +387,8 @@
         </div>
     </section>
     <!-- subscribe part end -->
+    
+  
 {% endblock %}
 {% block footer %}
     <!--::footer_part start::-->
@@ -413,7 +415,7 @@
                             <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="{{ asset ('https://colorlib.com')}}" target="_blank"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
-<iframe src="https://www.google.com/maps/d/embed?mid=1_CEo7EOWczuCUG27YS8OBerIaP-uBPXC" width="640" height="480"></iframe>
+
                             <div class="copyright_link">
                                 <a href="{{ asset ('#')}}">Turms & Conditions</a>
                                 <a href="{{ asset ('#')}}">FAQ</a>  
@@ -429,6 +431,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 {% endblock %}
 {% block javascript %}
     <!-- jquery plugins here-->
+    
     <script src="{{ asset ('js/jquery-1.12.1.min.js')}}"></script>
     <!-- popper js -->
     <script src="{{ asset ('js/popper.min.js')}}"></script>
@@ -450,5 +453,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{ asset ('js/mail-script.js')}}"></script>
     <!-- custom js -->
     <script src="{{ asset ('js/custom.js')}}"></script>
-	{% endblock %}
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    {% endblock %}
+    
 </body>
+</html>
