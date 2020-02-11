@@ -39,8 +39,7 @@
               {{ item.produits.nom }}
             </td>
             <td>
-              <img class="imgpanier"
-                src="{{ asset('img/') }}{{ item.produits.image }}" />
+              <img class="imgpanier" src="{{ asset('img/') }}{{ item.produits.image }}"/>
             </td>
             <td>
               {{ item.produits.description }}
@@ -50,6 +49,22 @@
             </td>
             <td>
               {{ item.quantity }}
+             <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                <span class="glyphicon glyphicon-minus">
+                <a href="{{ path('panier_remove', {id: item.produits.id})}}"></a>
+                </span>
+              </button>
+          </span>
+          <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                  <span class="glyphicon glyphicon-plus">
+                  <a href="{{ path('panier_add',{id: item.produits.id})}}"></a></span>
+              </button>
+          </span>
+      </div>
             </td>
             <td>
               {{ item.produits.prix * item.quantity }}
