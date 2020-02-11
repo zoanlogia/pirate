@@ -1,65 +1,101 @@
 {% extends "base.html.twig" %}
-  {% block main %}
+
+{% block main %}
+
     <div>
-      <h1>
-        Valider votre commande
-      </h1>
+        <h1>Valider votre commande</h1>
     </div>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>
-            Produit
-          </th>
-          <th>
-            Prix
-          </th>
-          <th>
-            Quantité
-          </th>
-
-          <th>
-            Total
-          </th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        {% for commands in command %}
-          <tr>
-            <td>
-              {{ commands.nom }}
-            </td>
-            <td>
-              {{ commands.prix }}
-            </td>
-            <td>
-              {{ commands.quantity }}
-            </td>
-            <td>
-              {{ commands.prix * commands.quantity }}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">
-            Total :
-          </td>
-          <td>
-            {{ totalPrice }}
+    {% block message %}
+            {% for error in app.flashes('error') %}
+                <div class="danger alert alert-danger">
+                    {{ error }}
+                </div>
+            {% endfor %}
+    {% endblock %}
+    
+    
+    
+    
+{% if items| length > 0 %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                    {% if  item.produits is not null %}
+                        <tr>
+                            <td>{{ item.produits.nom }}</td>
+                            <td>{{ item.produits.prix }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>{{ item.produits.prix * item.quantity }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total : </td>
+                    <td>{{ totalPrice }}</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <form method="post" action="{{ path('paiement') }}">
+            <div class="form-group col-5">
+                    <label for="prenom_user">Prénom</label>
+                    <input type="text" id="prenom_user" name="prenom_user" class="form-control" 
+                    value="" required>
+                </div>
+                <div class="form-group col-5">
+                    <label for="nom_user">Nom</label>
+                    <input type="text" id="nom_user" name="nom_user" class="form-control" value="" required>
+                </div>
             
-          </td>
-        
-        </tr>
-        
-      </tfoot>
-      <div class "valider-button">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Valider</button>
-    </table>
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" class="form-control" value="" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="code">Code postal</label>
+                    <input type="number" id="code" name="code" class="form-control" value="" required>
+                </div>
+                <div class="form-group col-4">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville" name="ville" class="form-control" value="" required>
+                </div>
+            </div>
+            <div class="form-group col-5">
+                    <label for="nom_card">Nom et prenom</label>
+                    <input type="text" id="nom_card" name="nom_card" class="form-control" value="" required>
+            </div>
+            <div class="form-group col-5">
+                    <label for="num_card">Numéro de carte</label>
+                    <input type="number" id="num_card" name="num_card" class="form-control" value="" required>
+            </div>
+            <div class="form-group col-5">
+                    <label for="date_card">Date d'expiration</label>
+                    <input type="month" id="date_card" name="date_card" class="form-control" value="" required>
+            </div>
+            <div class="form-group col-5">
+                    <label for="code_card">Code derriere</label>
+                    <input type="number" id="code_card" name="code_card" class="form-control" value="" required>
+            </div>
+            <div class="mx-auto text-center">
+                    <input type="submit" value="Valider et Payer !" class="btn btn-primary d-inline-block">
+            </div>
+        </form>
+    {% else %}
+        <p>Vous n'avez aucune commande</p>
     {% endif %}
-    </div>
-  {% endblock %}
+
+{% endblock %}
+
 

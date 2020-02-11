@@ -22,11 +22,7 @@
         "symfony/process": "4.4.*",
         "symfony/security-bundle": "4.4.*",
         "symfony/serializer-pack": "*",
-<<<<<<< HEAD
         "symfony/swiftmailer-bundle": "4.4",
-=======
-        "symfony/swiftmailer-bundle": "^3.4",
->>>>>>> 3f3c6798b6b373d5a8b3a4d4328dc0e8be4f0146
         "symfony/translation": "4.4.*",
         "symfony/twig-pack": "*",
         "symfony/validator": "4.4.*",
