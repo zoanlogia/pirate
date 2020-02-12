@@ -41,42 +41,28 @@
                             <a class="nav-link" href="{{path('pirate')}}">Espace admin</a>
                              </li>
                                 {% endif %}
-                                {% if is_granted('ROLE_USER') %}
-                                <li class="nav-item {% if mainNavMember is defined %}active{% endif %}">
-                                 <a class="nav-link" href="{{path('pirate')}}">Espace membre</a>
-                                </li>
-                                {% endif %}
                                 <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('pirate')}}">A propos</a>
                                 </li>
-                                
-                                {% if is_granted('ROLE_USER') %}
                                 <li class="nav-item ">
                                     <a class="nav-link" href="{{ path ('produits')}}">Produits </a>
                                 </li>
-                                 
-                                {% endif %}
-
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="{{ path ('pirate')}}" id="navbarDropdown_3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                    
-                                    
-                                        <a class="dropdown-item" href="{{ path ('pirate')}}">
+                                    <a class="dropdown-item" href="{{ path ('pirate')}}">
                                         {% if is_granted('ROLE_USER') %}
-
                                         <a class="nav-link" href="{{path('logout')}}">Déconnexion</a>
                                         {% else %}
-                                            
                                         <a class="nav-link" href="{{path('app_registration_register')}}">Inscription</a>
                                         <a class="nav-link" href="{{path('login')}}">Connexion</a>
-                                            
                                         {% endif %}
-                                        
-                                        <a class="dropdown-item" href="{{ path ('panier_index')}}">Mon panier</a>
-                                        <a class="dropdown-item" href="{{ path ('command')}}">Confirmation</a>
+                                        {% if is_granted('ROLE_USER') %}
+                                        <a class="dropdown-item {% if mainNavPanier is defined %}active{% endif %}" href="{{ path ('panier_index')}}">Mon panier</a>
+                                        <a class="dropdown-item {% if mainNavCommand is defined %}active{% endif %}" href="{{ path ('command')}}">Confirmation</a>
+                                        {% endif %}
                                     </div>
                                 </li>
                                 <li class="nav-item">
