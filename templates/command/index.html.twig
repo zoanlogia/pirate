@@ -1,0 +1,65 @@
+{% extends "base.html.twig" %}
+  {% block main %}
+    <div>
+      <h1>
+        Valider votre commande
+      </h1>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Produit
+          </th>
+          <th>
+            Prix
+          </th>
+          <th>
+            Quantité
+          </th>
+
+          <th>
+            Total
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        {% for commands in command %}
+          <tr>
+            <td>
+              {{ commands.nom }}
+            </td>
+            <td>
+              {{ commands.prix }}
+            </td>
+            <td>
+              {{ commands.quantity }}
+            </td>
+            <td>
+              {{ commands.prix * commands.quantity }}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            Total :
+          </td>
+          <td>
+            {{ totalPrice }}
+            
+          </td>
+        
+        </tr>
+        
+      </tfoot>
+      <div class "valider-button">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Valider</button>
+    </table>
+    
+    </div>
+  {% endblock %}
+

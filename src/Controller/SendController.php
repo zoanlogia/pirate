@@ -12,12 +12,12 @@ class SendController extends AbstractController
      */
     public function index(\Swift_Mailer $mailer)
     {
-        
-                  
-        $email = $_POST['email'];
-        $prenom = $_POST['prenom'];
+        $objet = $_POST['objet'];
+        $commentaire = $_POST['message'];
         $nom = $_POST['nom'];
-        $commentaire = $_POST['commentaire'];
+        $email = $_POST['email'];
+
+       
      
         $message = (new \Swift_Message('Hello Email'))
             ->setFrom($email)

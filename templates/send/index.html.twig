@@ -1,8 +1,31 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}Hello SendController!{% endblock %}
+{% extends "base.html.twig" %}
+{% block title %}Hello FormulaireController!{% endblock %}
 
-{% block body %}
+{% block main %}
+<form class="formu" action={{ path('send')}} method="post">
+<div class="container">
+<div class="col-md-4 form-group">
+                   <label for="nom">Entrez votre nom</label>
+                   <input type="text" class="form-control" name="nom" id="nom" placeholder="" required>
+                 </div>
+                 <div class="col-md-4 form-group">
+                   <label for="prenom">Entrez votre prenom</label>
+                   <input type="text" class="form-control" name="prenom" id="nom" placeholder=""  required>
+                 </div>
+  <div class="col-md-4 form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
 
+  <div class="col-md-7 form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="commentaire" rows="3" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
 
 {% endblock %}
+

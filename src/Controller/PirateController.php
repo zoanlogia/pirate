@@ -10,10 +10,14 @@ class PirateController extends AbstractController
     /**
      * @Route("/pirate", name="pirate")
      */
+
+     /**@Route ("/") */
     public function index()
     {
-        return $this->render('pirate/index.html.twig', [
+        return $this->render('base.html.twig', [
             'controller_name' => 'PirateController',
         ]);
     }
+
+
 }

@@ -1,0 +1,72 @@
+{#{extends 'base.html.twig'}#}
+
+{% block title %}
+<h1 class="titre"> A propos</h1>
+
+{% endblock %}
+
+{% block body %}
+<style>
+    .titre { 
+           color:gold;
+           }
+    .contenue    { 
+            height: 60%;
+            weight:100%;
+            padding: 20%;
+            background-image: url({{ asset('img/main.jpg') }});
+            opacity: 0,75;
+           
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: 100% ;
+    }
+    main{
+             width: 80%;
+            padding: 1rem;          
+            background-color: hsla(30, 100%, 100%, .2);
+           
+            background-image:
+            url("images/icone_travel.svg"),
+            url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQImWNgwAb6ll307Vt20Re3ADIAAD0TCUm6wYzZAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat, repeat;
+            background-size: 100px auto, auto;
+            background-position: 100% 110%, 0 0;
+            
+            margin: auto; /* permet de centrer main à condition que son parent body soit en display: flex; et avec une height de 100vh*/
+
+            border-radius:0 20px 100px 50px;
+            overflow: hidden;
+    }
+   
+   .contenue p { 
+            background-image: radial-gradient(20px at 50%, gold, transparent);
+            background-size:50px 50px;
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+            background:catervis;
+            
+           
+    }
+</style>
+    <main>
+<div class="contenue">
+   <p><b> Sens des arômes est une marque française de cosmétiques, d’aromathérapie et de produits de bien-être, 
+        fondée à Paris en 2020 par, Dounia, Adame, Bryan et Guillaume. 
+        Notre boutique est spécialisée dans la vente d'huiles essentielles et d'ingrédients végétaux pour fabriquer ses propres 
+        cosmétiques.</b></p>
+
+    <p><i> illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant.
+
+hae duae provinciae bello quondam piratico catervis mixtae praedonum a servilio pro consule missae sub iugum factae sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo monte amano disparantur.
+
+oportunum est, ut arbitror, explanare nunc causam, quae ad exitium praecipitem aginatium inpulit iam inde a priscis maioribus nobilem, ut locuta est pertinacior fama. nec enim super hoc ulla documentorum rata est fides.
+
+ego vero sic intellego, patres conscripti, nos hoc tempore in provinciis decernendis perpetuae pacis habere oportere rationem. nam quis hoc non sentit omnia alia esse nobis vacua ab omni periculo atque etiam suspicione belli?
+
+duplexque isdem diebus acciderat malum, quod et theophilum insontem atrox interceperat casus, et serenianus dignus exsecratione cunctorum, innoxius, modo non reclamante publico vigore, discessit.</i></p>
+
+</div>
+<main>
+
+{% endblock %}
